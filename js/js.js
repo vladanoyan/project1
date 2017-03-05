@@ -9,28 +9,36 @@ $('#nav-icon3').click(function(){
 
 
     $('.ourNewCarousel').owlCarousel({
-        loop:true,
+    	loop: true,
         items:1,
-   
+        autoplay:true,
+		animateOut: 'fadeOut'   
     });
    
 
     $('.ourSecondCarousel').owlCarousel({
-         loop:true,
-   		 nav:true,
-   		 margin:20,
-    	 responsive:{
-	        0:{
-	            items:1
+		margin: 20,
+		loop: true,
+		autoplay:true,
+		nav: true,
+		autoplayTimeout:3000,
+		navText: ["<",">"],
+		responsive:{
+    		0:{
+	            items:1,
+	            nav:true
 	        },
-	        450:{
-	            items:2
-	        },
-	        600:{
-	            items:3
+	        550:{
+	            items:2,
+	            nav:true
 	        },
 	        1000:{
-	            items:4
+	            items:3,
+	            nav:true
+	        },
+	        1200:{
+	            items:4,
+	            nav:true
 	        }
     }
     });

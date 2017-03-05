@@ -93,7 +93,6 @@
     {
 
     top: -20px;
-
     }
 }
 @media screen and (max-width:843px) {
@@ -132,6 +131,18 @@
     {
         width: 150px;
     }
+    .footer-links li a {
+    display: block !important;
+    float: none !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-right: none !important;
+    text-align: -webkit-center;
+}
+    .footer-links ul 
+    {
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width:660px) {
     .imglogo
@@ -168,11 +179,10 @@
     
      .center
     {
-
     top: 20px;
-
     }
 }
+
 @media screen and (max-width:420px) {
 
 
@@ -180,6 +190,7 @@
     {
 
     top: 30px;
+    margin-bottom: 45px;
 
     }
 

@@ -1,0 +1,27 @@
+/*page1 CSS*/
+.Title_page1 {
+  z-index: 68;
+  background-image: url("../images/Title bottom border.png");
+  width: 632px;
+  height: 2px;
+  margin:0 auto;
+  margin-bottom: 40px;
+
+}
+.page1
+{
+  margin-bottom: 45px;
+}
+ /*page2 CSS*/
+.Title_page2 {
+  z-index: 68;
+  background-image: url("../images/Title bottom border.png");
+  width: 231px;
+  height: 2px;
+  margin:0 auto;
+  margin-bottom: 40px;
+
+}
+
+
+

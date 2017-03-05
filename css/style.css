@@ -6,6 +6,16 @@
   margin: 0px;
   padding:0px;
 }
+/* latin */
+/* latin */
+@font-face {
+  font-family: 'Damion';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Damion'), url(../fonts/Damion/font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 body
 {
   background-image: url("../images/background.png");
@@ -259,7 +269,7 @@ display: inline-block;
 
 .PROPRIETES {
   font-size: 12px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   color: #fff;
   text-shadow: 0px 2px 4.76px rgba(0, 0, 0, 0.68);
   -moz-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
@@ -272,7 +282,7 @@ display: inline-block;
 }
 .PROPRIETES1 {
   font-size: 12px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   color: #fff;
   text-shadow: 0px 2px 4.76px rgba(0, 0, 0, 0.68);
   -moz-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
@@ -294,16 +304,36 @@ z-index: 39;
 /*CONTENT CSS*/
 .content
 {
-  border: 1px solid red;
   width: 100%;
-  height: 780px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   
 }
 .Coups_de_Coeur
 {
-  font-family: "OpenSans";
-  font-weight: 300;
+  font-family: "Open Sans";
+  font-weight: 500;
   font-size: 32px;
+  margin-top: 0;
+}
+.pics
+{
+  position: relative;
+}
+.VENTE {
+  background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  font-size: 13px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.846;
+  position: absolute;
+  left: 12px;
+  top: 0px;
+  width: 60px;
+  height: 24px;
+  z-index: 111;
 }
 
 .Title_bottom_border {
@@ -315,8 +345,8 @@ z-index: 39;
 
 
 .Toutes_nos_annonces__ {
-  font-size: 13px;
-  font-family: "OpenSans";
+  font-size: 15px;
+  font-family: "Open Sans";
   color: inherit;
   line-height: 4.846;
   -moz-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
@@ -371,7 +401,7 @@ height: 66px;
 }
 .Les_Angles_735_000_€_FAI_1_ {
 font-size: 16px;
-font-family: "OpenSans";
+font-family: "Open Sans";
 color: rgb(255, 255, 255);
 line-height: 1.125;
 text-align: left;
@@ -395,7 +425,7 @@ padding: 5px 20px;
 vertical-align: top;
 border: none;
 font-size: 13px;
-font-family: "OpenSans";
+font-family: "Open Sans";
 color: rgb(135, 135, 135);
 line-height: 8px;
 -moz-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
@@ -404,12 +434,195 @@ line-height: 8px;
 
 }
 
+.ourSecondCarousel .owl-nav
+{
+  display: block !important;
+}
+
+.ourSecondCarousel .owl-nav div
+{
+  position: absolute;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  padding-top: 3px;
+  font-weight: bold;
+  border: 1px solid #d5d5d5;
+  color: #373737;
+}
+
+.ourSecondCarousel .owl-nav .owl-next
+{
+  right: -40px;
+  bottom: 149px;
+}
+
+.ourSecondCarousel .owl-nav .owl-prev
+{
+  left: -40px;
+  bottom: 149px;
+}
+
+.Bonne
+{
+  font-family: 'Damion', cursive;
+  font-weight: 300;
+  font-size: 32px;
+  margin-top: 40px;
+  text-align: -webkit-center;
+
+}
 .Parce{
   font-weight: 300;
   font-size: 15px;
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   color: black;
   text-align: justify;
+  margin: 0 15px;
 }
+
+.slider-row
+{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/*FOOTER_LINKS*/
+
+
+.footer-links 
+{
+  background-color: background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  padding-top: 15px;
+  padding-bottom: 15px; 
+}
+
+.footer-links ul 
+{
+list-style-type: none; 
+margin-left: 75px;
+}
+
+.footer-links ul li:last-child a {
+  border-right: none; 
+}
+
+.footer-links ul li a 
+{
+  line-height: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  float: left;
+  font-size: 10px;
+  font-family: "Open Sans";
+  color: #FFFDD3;
+  border-right: 1px solid white;
+  text-transform: uppercase; 
+}
+.footerbackground
+{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/footerbackground.png");
+  min-height: 301px;
+}
+
+.Real_estate{
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(65, 65, 65);
+  line-height: 1.556;
+  text-align: center;
+  font-weight: bold;
+}
+.phone{
+  font-weight: 300;
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: black;
+}
+
+.buttonCall {
+  border-radius: 3px;
+  background-color: background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
+  box-shadow: inset 0px 0px 1px 0px rgba(255, 255, 255, 0.75);
+  color: #FFF;
+  width: 247px;
+  height: 33px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  line-height: 1.714;
+  border:none;
+}
+
+.circle
+{
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 2px;
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+}
+.Villeneuve{
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: rgb(160, 160, 160);
+  line-height: 17px;
+  font-weight: 300;
+}
+
+.Shape_2 {
+  background-color: #b0b0b0;
+  height: 1px;
+}
+.Shape_3 {
+  background-color: #dad3d3;
+  height: 1px;
+  margin-top: 26px;
+}
+.Plan_du_site{
+  font-size: 11px;
+  font-family: "Open Sans";
+  color: #a0a0a0;
+  line-height: 1.182;
+  font-weight: 300;
+ 
+}
+.Creation{
+  font-size: 9px;
+  font-family: "Open Sans";
+  color: #a0a0a0;
+  line-height: 1.111;
+  text-align: justify;
+  display: inline-block;
+}
+.footerlogo
+{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Title_page1 {
+  z-index: 68;
+  background-image: url("../images/Title bottom border.png");
+  width: 632px;
+  height: 2px;
+  margin:0 auto;
+  margin-bottom: 40px;
+
+}
+.page1
+{
+  margin-bottom: 45px;
+}
+
 
 
