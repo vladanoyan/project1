@@ -42,4 +42,15 @@ $('#nav-icon3').click(function(){
 	        }
     }
     });
+/*chenge btn text*/
+
+    	$('#equipment').click(function(){
+    	$('#equipment').toggleClass('flashOn flash')
+    });
+    $('#equipment').click(function(){
+        $('.batserach').toggleClass('change'),
+            $('#changetext').toggleClass('change')
+
+
+    });
     });

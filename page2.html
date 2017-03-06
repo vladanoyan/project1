@@ -22,11 +22,83 @@
         <h1 class="Coups_de_Coeur">APPARTEMENTS</h1>
         <div class="Title_page2"></div>
     </div><!-- row -->
-    <div class="container">
-        <div class="row">
+    <div class="container formcontainer">
+
+        <ul class="nav nav-tabs nav-search">
+            <li class="active"><a data-toggle="tab" href="#vente" id="changetext">Vente</a></li>
+            <li><a data-toggle="tab" href="#menu1">Location</a></li>
+            <li><a data-toggle="tab" href="#menu2">Location Saisonnière</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="vente" class="tab-pane fade in active searchbar">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                <div class="form-group">
+                    <select class="form-control myform-control  selectpicker">
+                        <option>Type de bien</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                    <select class="form-control myform-control  selectpicker">
+                        <option>ville</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                        <input class="myform-control" type="text" name="prix max" placeholder="prix max." value="">
+                        <input class="myform-control" type="text" name="Surface min." placeholder="Surface min." value="">
+                        <input class="myform-control" type="text" name="Nb de pièces min." placeholder="Nb de pièces min." value="">
+                        <button class="batserach btn-default" type="button">Rechercher</button>
+                </div><!--form-group-->
+             </div> <!--home id-->
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div  class="tab-pane fade in active searchbar">
+                            <div class="form-group">
+                                <select class="form-control myform-control  selectpicker">
+                                    <option>Date d’annonce</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                                <select class="form-control myform-control  selectpicker">
+                                    <option>Elargir à...</option>
+                                    <option>Ketchup</option>
+                                    <option>Relish</option>
+                                </select>
+                                    <input class="myform-control" type="text" name="prix max" placeholder="prix max." value="">
+                                    <input class="myform-control" type="text" name="Surface terrain min." placeholder="Surface terrain min." value="">
+                                    <input class="myform-control" type="text" name="Nb de chambres min." placeholder="Nb de chambres min." value="">
+                            </div><!--form-group-->
+                        </div> <!--home id-->
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                Avec photo uniquement
+                            </label>
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                Avec piscine
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="SeeMore2"  data-toggle="collapse" href="#collapseTwo"><div id="equipment" class="flash"> </div><!--<img class="change" src="images/criteria-btn.png" alt=""><img class="change2" src="images/change2.png" alt="">--></button>
+                </div>
+            </div><!--id vente-->
 
 
+            <div id="menu1" class="tab-pane fade">
+                <h3>Location</h3>
+             </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Location Saisonnière</h3>
+             </div>
 
+        </div>
+    </div>
 
         </div><!-- row -->
     </div><!-- container -->

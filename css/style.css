@@ -6,8 +6,26 @@
   margin: 0px;
   padding:0px;
 }
-/* latin */
-/* latin */
+ul li{
+  list-style-type: none;
+}
+/* fonts*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-Regular.woff');
+}
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans/OpenSans-Semibold.woff');
+}
+@font-face
+{
+  font-family:"Open Sans Light";
+  src:url("../fonts/OpenSans/OpenSans-Light.woff") format("woff");
+  font-weight:normal;
+  font-style:normal;
+}
+
 @font-face {
   font-family: 'Damion';
   font-style: normal;
@@ -15,10 +33,15 @@
   src: local('Damion'), url(../fonts/Damion/font.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
 body
 {
   background-image: url("../images/background.png");
+  font-family: 'Open Sans', sans-serif;
   }
   /*toggle_icon*/
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
@@ -195,12 +218,14 @@ body
 text-decoration: none;
 color: #fff;
 font-weight: 600;
+text-shadow: -3px 0px 3px rgb(38, 38, 38);
 }
 .PROPRIETES1:hover
 {
 text-decoration: none;
 color: #fff;
 font-weight: 600;
+text-shadow: -3px 0px 3px rgb(38, 38, 38);
 }
 
 .images{
@@ -356,8 +381,8 @@ z-index: 39;
 .Toutes_nos_annonces__:hover
 {
 text-decoration: none;
-font-weight: 600;
 color: inherit;
+text-shadow: -3px 0px 9px rgb(38, 38, 38);
 }
 .ourSecondCarousel
 {
@@ -373,6 +398,7 @@ background-color: white;
 }
 .ourSecondCarousel .owl-item img{
   height: 153px;
+  object-fit: cover;
 }
 .ourSecondCarousel .owl-item
 {
@@ -403,7 +429,6 @@ height: 66px;
 font-size: 16px;
 font-family: "Open Sans";
 color: rgb(255, 255, 255);
-line-height: 1.125;
 text-align: left;
 -moz-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
 -webkit-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
@@ -445,7 +470,7 @@ line-height: 8px;
   background-color: white;
   width: 30px;
   height: 30px;
-  padding-top: 3px;
+  padding-top: 4px;
   font-weight: bold;
   border: 1px solid #d5d5d5;
   color: #373737;
@@ -475,7 +500,7 @@ line-height: 8px;
 .Parce{
   font-weight: 300;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans Light";
   color: black;
   text-align: justify;
   margin: 0 15px;
@@ -500,8 +525,7 @@ line-height: 8px;
 
 .footer-links ul 
 {
-list-style-type: none; 
-margin-left: 75px;
+list-style-type: none;
 }
 
 .footer-links ul li:last-child a {
@@ -531,7 +555,7 @@ margin-left: 75px;
 
 .Real_estate{
   font-size: 18px;
-  font-family: "Open Sans";
+  font-family: "Open Sans Bold";
   color: rgb(65, 65, 65);
   line-height: 1.556;
   text-align: center;
@@ -540,7 +564,7 @@ margin-left: 75px;
 .phone{
   font-weight: 300;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Open Sans Light";
   color: black;
 }
 
@@ -573,7 +597,7 @@ margin-left: 75px;
 }
 .Villeneuve{
   font-size: 11px;
-  font-family: "Open Sans";
+  font-family: "Open Sans Light";
   color: rgb(160, 160, 160);
   line-height: 17px;
   font-weight: 300;
@@ -590,7 +614,7 @@ margin-left: 75px;
 }
 .Plan_du_site{
   font-size: 11px;
-  font-family: "Open Sans";
+  font-family: "Open Sans Light";
   color: #a0a0a0;
   line-height: 1.182;
   font-weight: 300;
