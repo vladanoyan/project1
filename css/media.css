@@ -131,18 +131,7 @@
     {
         width: 150px;
     }
-    .footer-links li a {
-    display: block !important;
-    float: none !important;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-right: none !important;
-    text-align: -webkit-center;
-}
-    .footer-links ul 
-    {
-        margin-left: 0px;
-    }
+
 }
 @media screen and (max-width:660px) {
     .imglogo
@@ -150,6 +139,13 @@
     {
         width: 130px;
     }
+    .listing-m3 .listing-item-parameters ul
+    {
+        columns: 1;
+        display: block;
+        text-align: center;
+    }
+
 }
 @media screen and (max-width:590px) {
     

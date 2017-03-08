@@ -47,10 +47,22 @@ $('#nav-icon3').click(function(){
     	$('#equipment').click(function(){
     	$('#equipment').toggleClass('flashOn flash')
     });
-    $('#equipment').click(function(){
-        $('.batserach').toggleClass('change'),
-            $('#changetext').toggleClass('change')
+   
+   /*__________Listing Model3 Functions Start_________*/
+/* Match Item heights for Listing Item */
+var matchHeightLstItm=function(){
+    if(window.innerWidth>=992)
+    {
+        if($('.listing-item-content').length)
+            $('.listing-item-content').css('height', 'auto');
+
+        if($('.listing-item-img').length)
+            $('.listing-item-img').outerHeight($('.listing-item-content').outerHeight());
+    }
+    else
+        $('.listing-item-img').css('height','auto');
+};
 
 
-    });
+
     });
