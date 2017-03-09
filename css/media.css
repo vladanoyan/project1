@@ -1,92 +1,5 @@
 
-@media screen and (max-width:1222px) {
-    .imglogo
 
-    {
-        width: 246px;
-    }
-}
-@media screen and (max-width:1206px) {
-.navbar-inverse .navbar-nav>li>a
-
-{font-size:12px ;
-}
-}
-@media screen and (max-width:1206px) {
-    .navbar-inverse .navbar-nav>li>a
-
-    {font-size:10px ;
-    }
-}
-@media screen and (max-width:1142px) {
-    .center
-    {
-
-    top: -60px;
-
-    }
-}
-@media screen and (max-width:1055px) {
-    .imglogo
-
-    {
-        width: 205px;
-    }
-    .center
-    {
-
-    top: -50px;
-
-    }
-}
-@media screen and (max-width:1005px) {
-.imglogo
-    {
-        width: 190px;
-    }
-    .center
-    {
-
-    top: -40px;
-
-    }
-}
-@media (max-width: 992px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,.navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in{
-        display:block !important;
-    }
-}
 @media screen and (max-width:925px) {
 
     .center
@@ -95,29 +8,6 @@
     top: -20px;
     }
 }
-@media screen and (max-width:843px) {
-
-    .center
-    {
-
-    top: -10px;
-
-    }
-}
-@media screen and (max-width:790px) {
-    .imglogo
-
-    {
-        width: 166px;
-    }
-    .center
-    {
-
-    top: 0px;
-
-    }
-
-
 @media screen and (max-width:770px) {
     .navbar-inverse .navbar-nav>li>a
 
@@ -125,20 +15,9 @@
         font-size: 13px;
     }
 
-}@media screen and (max-width:709px) {
-    .imglogo
-
-    {
-        width: 150px;
-    }
-
 }
 @media screen and (max-width:660px) {
-    .imglogo
 
-    {
-        width: 130px;
-    }
     .listing-m3 .listing-item-parameters ul
     {
         columns: 1;
@@ -147,42 +26,17 @@
     }
 
 }
-@media screen and (max-width:590px) {
-    
-     .center
-    {
-
-    top: 10px;
-
-    }
-
-}
-@media screen and (max-width:540px) {
-    .imglogo
-
-    {
-        width: 105px;
-    }
-    .flag2
-    {
-        width:23px ;
-    }
-}
 
 
 @media screen and (max-width:470px) {
-
-    
-     .center
+    .center
     {
     top: 20px;
     }
 }
 
 @media screen and (max-width:420px) {
-
-
-     .center
+ .center
     {
 
     top: 30px;

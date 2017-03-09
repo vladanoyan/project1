@@ -12,9 +12,9 @@ $('#nav-icon3').click(function(){
     	loop: true,
         items:1,
         autoplay:true,
-		animateOut: 'fadeOut'   
+		animateOut: 'fadeOut'
     });
-   
+
 
     $('.ourSecondCarousel').owlCarousel({
 		margin: 20,
@@ -47,7 +47,7 @@ $('#nav-icon3').click(function(){
     	$('#equipment').click(function(){
     	$('#equipment').toggleClass('flashOn flash')
     });
-   
+
    /*__________Listing Model3 Functions Start_________*/
 /* Match Item heights for Listing Item */
 var matchHeightLstItm=function(){
@@ -63,6 +63,4 @@ var matchHeightLstItm=function(){
         $('.listing-item-img').css('height','auto');
 };
 
-
-
-    });
+});
