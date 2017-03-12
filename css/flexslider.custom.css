@@ -15,6 +15,7 @@
 }
 .slider { 
 	margin: 50px 0 10px!important;
+
 }
 /*--- General Ends ---*/
 
@@ -29,7 +30,8 @@
 
 #slider {
 	height: calc(100% - 121px);
-	border: none;
+	border:none;
+
 }
 #slider ul.slides,
 #slider ul.slides li {
@@ -45,6 +47,7 @@
 /*--- Main Slider Ends ---*/
 
 /*--- Thumbnails Start ---*/
+
 #thumbnails li {
 	margin-right: 5px;
 }
@@ -68,11 +71,19 @@
 	height: 100%;
 	width: auto;
 }
+
 .flexslider#thumbnails {
 	padding: 22px 21px 5px 21px;
-	height: 121px;
-	border: none;
+    height: 121px;
+    background: transparent;
+    padding-left: 0px;
+   
 	
+
+}
+.flexslider
+{
+	border:none;
 }
 #thumbnails ul.slides,
 #thumbnails ul.slides li {
