@@ -980,7 +980,17 @@ margin-bottom: 17px;
   margin-left: 12px;
   margin-top: 14px;
 }
-
+.multiselect
+{
+    width: 190px!important;
+    height: 39px!important;
+    border-radius: 0px!important;
+    display: inline-block!important;
+    margin-left: 12px !important;
+    text-align: left !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px!important;
+}
 .myform-control:focus
 {
   border-color: #c8c8c8;
@@ -3135,7 +3145,560 @@ text-align: -webkit-center;
 {
   margin-bottom: 45px;
 }
+.usericon
+{
+    line-height: 43px !important;
+    font-size: 25px !important;
+    vertical-align: middle !important;
+    color:white !important;
+}
 
+.contact-m2-v1
+{
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.rightcaret
+{
+    margin-left: 15px;
+}
+.leftcaret
+{
+    margin-right: 15px;
+}
+/*-------------------- Form Sizing Starts ----------------------*/
+.form-md input:not([type='checkbox']), .form-md select, .form-md .form-control {
+    padding: 9px 9px;
+    height: 35px;
+}
+.form-md .control-label {
+    height: 35px;
+}
+
+.form-lg input:not([type='checkbox']), .form-lg select, .form-lg .form-control {
+    padding: 14px 9px;
+    height: 45px;
+}
+.form-lg .control-label {
+    height: 45px;
+}
+
+.form-xlg input:not([type='checkbox']), .form-xlg select, .form-xlg .form-control {
+    /*padding: 16.5px 9px;*/
+    height: 50px;
+
+}
+.form-xlg .control-label {
+    height: 50px;
+}
+/*-------------------- Form Sizing Ends ------------------------*/
+/****************** Form Wizard Model1 Starts *******************************/
+/*--------------------------------------------------------------------------*/
+/*--- Form Wizard Content Starts ---*/
+.form-wizard-m1 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.form-wizard-m1 .wizard-nav {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form-wizard-m1 .wizard-nav li {
+    position: relative;
+    display: inline-block;
+    float: none;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 700;
+    vertical-align: top;
+    list-style-type: none;
+    text-transform: uppercase;
+    z-index: 6;
+    margin-left: -0.125em;
+    margin-right: -0.125em;
+}
+.input-group-addon
+{
+    padding:6px 30px !important;
+}
+/* z-index can be set also dynamically using jquery.
+In this case we don't need it as there are max 4 tabs */
+.form-wizard-m1 .wizard-nav li:nth-child(2) {
+    z-index: 5;
+}
+.form-wizard-m1 .wizard-nav li:nth-child(3) {
+    z-index: 4;
+}
+.form-wizard-m1 .wizard-nav li:nth-child(4) {
+    z-index: 3;
+}
+.form-wizard-m1 .wizard-nav.nav-pills>li>a {
+    display: inline-block;
+    padding: 0;
+}
+
+.form-wizard-m1 .previous.disabled,
+.form-wizard-m1 .next.disabled {
+    display: none;
+}
+
+.form-wizard-m1 .pager .next>a, .form-wizard-m1 .pager .next>span,
+.form-wizard-m1 .pager .finish>a, .form-wizard-m1 .pager .finish>span {
+    float: left;
+}
+.form-wizard-m1 .pager li {
+    display: block;
+    clear: both;
+}
+.form-wizard-m1 .wizard-nav li h2 {
+    font-size: 1em;
+    text-transform: none;
+    text-align: center;
+}
+.form-wizard-m1 .wizard-nav li.active h2 {
+    font-weight: bold;
+}
+.form-wizard-m1 .tab-content {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+/*--- Form Wizard Content Ends ---*/
+
+/*--- Form Wizard Options Start ---*/
+.form-wizard-m1 .wizard-nav.nav-pills>li>a.border-circle {
+    border-radius: 50%;
+    width: 45px !important;
+}
+.form-wizard-m1 .pager li>a.border-rounded,
+.pager li>span.border-rounded {
+    border-radius: 0px;
+    border: none;
+    background: #882c2f;
+    color: white;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    margin-top: 20px;
+
+}
+.wizard
+{
+    padding:27px;
+}
+.form-wizard-m1 .pager li>a.border-rect,
+.pager li>span.border-rect {
+    border-radius: 0px;
+}
+/*--- Form Wizard Options End ---*/
+
+/*--- Form Wizard Colors Start ---*/
+.form-wizard-m1 .wizard-nav li {
+    color: #505050;
+}
+.form-wizard-m1 .wizard-nav li.active {
+    color: black;
+}
+.form-wizard-m1 .wizard-nav li .btn-info-fav-clr {
+    color: #b4b4b4;
+    background-color: #a3a3a3;
+    border: 1px solid #a3a3a3;
+}
+.form-wizard-m1 .wizard-nav li.active .btn-info-fav-clr,
+.form-wizard-m1 .wizard-nav li.visited-step .btn-info-fav-clr {
+    color: #ffffff;
+    background-color: #882c2f;
+    border: 1px solid #882c2f;
+
+
+}
+.form-wizard-m1 .pager li>a, .form-wizard-m1 .pager li>span {
+    border: 2px solid #95c819;
+}
+/*--- Form Wizard Colors End ---*/
+
+/*--- Form Wizard Media Queries Start ---*/
+@media (min-width: 480px) {
+    .form-wizard-m1 .wizard-nav li {
+        padding: 0 5% 0 5%;
+    }
+    .form-wizard-m1 .pager li {
+        display: inline;
+    }
+    .form-wizard-m1 .pager .next>a, .form-wizard-m1 .pager .next>span,
+    .form-wizard-m1 .pager .finish>a, .form-wizard-m1 .pager .finish>span {
+        float: right;
+    }
+    /*progressbar connectors*/
+    .form-wizard-m1 .wizard-nav li:not(:first-of-type):before {
+        background: #a3a3a3;
+        width: 100%;
+        content: '';
+        height: 10px;
+        position: absolute;
+        top: 17.5px;
+        right: 50%;
+        z-index: -1;
+        -webkit-transition: background .3s linear;
+        -o-transition: background .3s linear;
+        transition: background .3s linear;
+    }
+    .form-wizard-m1 .wizard-nav li.active:not(:first-of-type):before,
+    .form-wizard-m1 .wizard-nav li.visited-step:not(:first-of-type):before {
+        background: #882c2f;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .form-wizard-m1 .wizard-nav li:nth-child(4n+3):not(:first-of-type):before {
+        background: transparent;
+    }
+}
+@media(min-width: 992px){
+    .form-wizard-m1 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+/*--- Form Wizard Media Queries End ---*/
+
+/****************** Form Wizard Model1 Ends *********************************/
+/*--------------------------------------------------------------------------*/
+
+
+
+/********************* Form Input Grouo Model1 Starts **********************************/
+/*-------------------------------------------------------------------------------------*/
+/*--------------------  Form Input Group Model1 Content Starts ----------*/
+.form-input-group-m1 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.form-input-group-m1 > div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.form-input-group-m1 .form-input-addon label{
+    width: 100%;
+    padding: 0 12px;
+    text-align: left;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid transparent;
+    -moz-border-radius: 25px 0px 0px 25px;
+    -ms-border-radius: 25px 0px 0px 25px;
+
+}
+/*override*/
+.form-xlg .form-input-group-m1 .form-input-addon label {
+    height: auto;
+}
+
+/* Cols for Double Input Forms without Addons Start */
+.form-input-group-m1 div.form-input-col1 .form-control,
+.form-input-group-m1 div.form-input-col1 .custom-multiselect-btn,
+.form-input-group-m1 div.form-input-col1 .select2-selection--single,
+.form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+
+    border-right: 0px!important;
+}
+
+.form-input-group-m1 div.form-input-col2 .form-control,
+.form-input-group-m1 div.form-input-col2 .custom-multiselect-btn,
+.form-input-group-m1 div.form-input-col2 .select2-selection--single,
+.form-input-group-m1 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m1 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+
+    border-left: 1px solid #c8c8c8;
+}
+.form-input-group-m1 div.form-input-col3 .form-control,
+.form-input-group-m1 div.form-input-col3 .custom-multiselect-btn,
+.form-input-group-m1 div.form-input-col3 .select2-selection--single,
+.form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-radius:0px !important;
+}
+/*.form-input-group-m1.form-error.form-error-m1 div.form-input-col2 .form-control {*/
+/*border-left: 1px solid #cd1711;*/
+/*}*/
+/* Cols for Double Input Forms without Addons End */
+/*override*/
+.form-input-group-m1.form-error.form-error-m1 .form-error-blck {
+    top: 65%;
+    transform: translateY(-65%);
+    -moz-transform: translateY(-65%);
+    -webkit-transform: translateY(-65%);
+    -o-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+}
+.form-border-rounded>input
+{
+    border-radius: 0px;
+}
+/*--------------------  Form Input Group Model1 Content Ends ----------*/
+
+/*--------------------  Form Input Group Model1 Media Query Starts ----------*/
+@media (min-width: 768px) {
+    .form-input-group-m1 .form-input-addon label {
+        padding: 12px;
+        color: #FFFFFF;
+        background-color: #a3a3a3;
+        border: 1px solid #a3a3a3;
+    }
+    /*override*/
+    .form-xlg .form-input-group-m1 .form-input-addon label {
+        height: 50px;
+    }
+
+    .form-input-group-m1 div.form-input-col1 .form-control,
+    .form-input-group-m1 div.form-input-col1 .custom-multiselect-btn,
+    .form-input-group-m1 div.form-input-col1 .select2-selection--single,
+    .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+    .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+        border-radius: 0px;
+        border-left: 1px solid #c8c8c8!important;
+    }
+    .form-input-group-m1 div.form-input-col3 .form-control,
+    .form-input-group-m1 div.form-input-col3 .custom-multiselect-btn,
+    .form-input-group-m1 div.form-input-col3 .select2-selection--single,
+    .form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+    .form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+        border-radius: 0px 25px 25px 0px;
+    }
+    /*override*/
+    .form-input-group-m1.form-error.form-error-m1 .form-error-blck {
+        top: 50%;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+    }
+}
+
+/*--------------------  Form Input Group Model1 Media Query Ends ----------*/
+/********************* Form Input Grouo Model1 Ends ************************************/
+/*-------------------------------------------------------------------------------------*/
+
+
+/********************* Form Input Grouo Model2 Starts **********************************/
+/*-------------------------------------------------------------------------------------*/
+/*--------------------  Form Input Group Model2 Content Starts ----------*/
+.form-input-group-m2 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.form-input-group-m2 > div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Cols for Double Input Forms without Addons Start */
+.form-input-group-m2 div.form-input-col1 .form-control,
+.form-input-group-m2 div.form-input-col1 .custom-multiselect-btn,
+.form-input-group-m2 div.form-input-col1 .select2-selection--single,
+.form-input-group-m2 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m2 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
+.form-input-group-m2 div.form-input-col1 .input-group-addon {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-right: 0px!important;
+}
+
+.form-input-group-m2 div.form-input-col2 .form-control,
+.form-input-group-m2 div.form-input-col2 .custom-multiselect-btn,
+.form-input-group-m2 div.form-input-col2 .select2-selection--single,
+.form-input-group-m2 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m2 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-left: 1px solid #c8c8c8;
+}
+.form-input-group-m2.form-error.form-error-m1 div.form-input-col2 .form-control {
+    border-left: 1px solid #cd1711;
+}
+/* Cols for Double Input Forms without Addons End */
+
+/* Cols for Double Input Forms with Addons Start */
+.form-input-group-m2 div.form-input-col3 .form-control,
+.form-input-group-m2 div.form-input-col3 .custom-multiselect-btn,
+.form-input-group-m2 div.form-input-col3 .select2-selection--single,
+.form-input-group-m2 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m2 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.form-input-group-m2 div.form-input-col3 .input-group-addon {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.form-input-group-m2 div.form-input-col4 {
+    margin-left: -2px;
+}
+.form-input-group-m2 div.form-input-col4 .form-control,
+.form-input-group-m2 div.form-input-col4 .custom-multiselect-btn,
+.form-input-group-m2 div.form-input-col4 .select2-selection--single,
+.form-input-group-m2 div.form-input-col4 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-input-group-m2 div.form-input-col4 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
+.form-input-group-m2 .input-group-addon {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-left: 0px;
+}
+/* Cols for Double Input Forms with Addons End */
+/*--------------------  Form Input Group Model2 Content Ends ----------*/
+
+/********************* Form Input Grouo Model2 Ends ************************************/
+/*-------------------------------------------------------------------------------------*/
+
+
+/********************** Form Error Model1  Starts  ****************************/
+/*----------------------------------------------------------------------------*/
+/*-------------------- Form Error Block Content Starts ----------------*/
+.form-error-blck {
+    display: none;
+}
+.form-error.form-error-m1 .form-error-blck {
+    display: inline-block;
+    z-index: 170;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+/* This is for fixing form error icon positioning problem when
+the drop down is opened above and the form tooltip  is under it */
+.form-error.form-error-m1 .form-error-blck.form-error-blck-pos-fix {
+    z-index: 110;
+}
+.form-error.form-error-m1 .error-btn i {
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+}
+.form-error.form-error-m1 .error-btn + .tooltip {
+    z-index: 150;
+}
+
+.form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+    right: 4%;
+}
+
+/*-------------------- Form Error Block Content Ends ----------------*/
+
+/*-------------------- Form Error Block Colors Start ----------------*/
+.contact-m2-v1 .form-block-sep-page textarea {
+    height: 152px;
+    border-radius: 9px;
+    resize: none;
+    overflow: hidden;
+}
+
+.form-border-rect .form-error.form-error-m1 input,
+.form-border-rect .form-error.form-error-m1 select,
+.form-border-rect .form-error.form-error-m1 textarea,
+.form-border-rect .form-error.form-error-m1 .custom-multiselect-btn,
+.form-border-rect .form-error.form-error-m1 .select2-selection--single,
+.form-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid #cd1711;
+}
+
+.form-border-rounded .form-error.form-error-m1 input,
+.form-border-rounded .form-error.form-error-m1 select,
+.form-border-rounded .form-error.form-error-m1 textarea,
+.form-border-rounded .form-error.form-error-m1 .custom-multiselect-btn,
+.form-border-rounded .form-error.form-error-m1 .select2-selection--single,
+.form-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid #cd1711;
+}
+
+.form-no-border .form-error.form-error-m1 input,
+.form-no-border .form-error.form-error-m1 select,
+.form-no-border .form-error.form-error-m1 textarea,
+.form-no-border .form-error.form-error-m1 .custom-multiselect-btn,
+.form-no-border .form-error.form-error-m1 .select2-selection--single,
+.form-no-border .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-no-border .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid #cd1711;
+}
+
+.form-no-border-rect .form-error.form-error-m1 input,
+.form-no-border-rect .form-error.form-error-m1 select,
+.form-no-border-rect .form-error.form-error-m1 textarea,
+.form-no-border-rect .form-error.form-error-m1 .custom-multiselect-btn,
+.form-no-border-rect .form-error.form-error-m1 .select2-selection--single,
+.form-no-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-no-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid #cd1711;
+}
+
+.form-no-border-rounded .form-error.form-error-m1 input,
+.form-no-border-rounded .form-error.form-error-m1 select,
+.form-no-border-rounded .form-error.form-error-m1 textarea,
+.form-no-border-rounded .form-error.form-error-m1 .custom-multiselect-btn,
+.form-no-border-rounded .form-error.form-error-m1 .select2-selection--single,
+.form-no-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-no-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid #cd1711;
+}
+
+.form-border-btm .form-error.form-error-m1 input,
+.form-border-btm .form-error.form-error-m1 select,
+.form-border-btm .form-error.form-error-m1 textarea,
+.form-border-btm .form-error.form-error-m1 .custom-multiselect-btn,
+.form-border-btm .form-error.form-error-m1 .select2-selection--single,
+.form-border-btm .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.form-border-btm .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
+    border: 1px solid transparent;
+    border-bottom: 1px solid #cd1711;
+}
+
+
+.form-error.form-error-m1 .error-btn i {
+    color: #cd1711;
+}
+.form-error.form-error-m1 .error-btn + .tooltip > .tooltip-inner {
+    background-color: #cd1711;
+    max-width: 250px;
+    width: 500px;
+    padding: 5px;
+}
+.form-error.form-error-m1 .error-btn + .tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-color: #cd1711;
+    border-width: 5px 5px 0;
+}
+/*-------------------- Form Error Block Colors End ----------------*/
+
+/*-------------------- Form Error Block Media Queries Start -------*/
+@media (min-width: 480px)  and (max-width: 600px){
+    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+        right: 7%;
+    }
+}
+@media (min-width: 601px)  and (max-width: 768px){
+    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+        right: 8%;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+        right: -20px;
+    }
+}
+/*-------------------- Form Error Block Media Queries End -------*/
+/********************** Form Error Model1 Ends  ****************************/
+/*-------------------------------------------------------------------------*/
 
 
 
@@ -3151,11 +3714,157 @@ text-align: -webkit-center;
 .page5
 {
   margin-bottom: 45px;
+
 }
 
 
 
 
+/********************* Browse Model2 Starts **********************************/
+/*---------------------------------------------------------------------------*/
+/*--------------------  Browse Model2 Content Starts ----------*/
+label.browse-m2.file {
+    margin-bottom: 0px;
+    width: 100%;
+    text-align: left;
+}
+.browse-m2 .file-custom {
+    text-align: left;
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    z-index: 5;
+    line-height: 1.5;
+    height: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.browse-m2 .file-name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+}
+.browse-m2 .file-name-inner {
+    position: absolute;
+    top: -1px;
+    padding: 9px 9px;
+    display: inline-block;
+    height: 100%;
+    width: calc(100% - 5px);
+    /*border-bottom: 1px solid red;*/
+}
+.browse-m2 .file-custom-txt {
+    height: 35px;
+    position: absolute;
+    top: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    line-height: 1.5;
+    font-weight: normal;
+    padding: 9px 9px;
+    text-align: center;
+}
+.browse-m2 .file-custom-txt i {
+    font-size: 16px;
+}
+.browse-m2 .file-custom-left .file-custom-txt {
+    left: -.075rem;
+    /*border-radius: 5px 0 0 5px;*/
+}
+.browse-m2 .file-custom-left .file-name-inner {
+    right: 1px;
+}
+.browse-m2 .file-custom-right .file-custom-txt {
+    right: -.075rem;
+    /*border-radius: 0 5px 5px 0;*/
+}
+.browse-m2 .file-custom-right .file-name-inner {
+    left: 1px;
+}
+/*--------------------  Browse Model2Content Ends ----------*/
+
+/*--------------------  Browse Model2 Sizing Starts ---------*/
+.form-md .browse-m2 .file-custom,
+.form-md .browse-m2 .file-name,
+.form-md .browse-m2 .file-custom-txt {
+    height: 35px;
+}
+.form-md .browse-m2 .file-name-inner,
+.form-md .browse-m2 .file-custom-txt {
+    padding: 9px 9px;
+}
+.form-md .browse-m2 .file-custom-txt i {
+    font-size: 16px;
+}
+
+.form-lg .browse-m2 .file-custom,
+.form-lg .browse-m2 .file-name,
+.form-lg .browse-m2 .file-custom-txt {
+    height: 45px;
+}
+.form-lg .browse-m2 .file-name-inner,
+.form-lg .browse-m2 .file-custom-txt {
+    padding: 12px 9px;
+}
+.form-lg .browse-m2 .file-custom-txt i {
+    font-size: 20px;
+}
+
+.form-xlg .browse-m2 .file-custom,
+.form-xlg .browse-m2 .file-name,
+.form-xlg .browse-m2 .file-custom-txt {
+    height: 50px;
+}
+
+.form-xlg .browse-m2 .file-name-inner,
+.form-xlg .browse-m2 .file-custom-txt {
+    padding: 14px 9px;
+}
+.form-xlg .browse-m2 .file-custom-txt i {
+    font-size: 20px;
+}
+/*--------------------  Browse Model2 Sizing Ends -----------*/
+
+/*--------------------  Browse Model2 Colors Start ----------*/
+.browse-m2 .file-custom {
+    background-color: #fff;
+    color: #555;
+}
+.browse-m2 .file-custom-txt  {
+    background-color: #882c2f;
+    color: #ffffff;
+}
+/*--------------------  Browse Model2 Colors End ------------*/
+
+/* Override */
+.form-border-rounded .file-custom,
+.form-border-rounded .form-control:focus {
+    outline: none;
+    border: 1px solid #c8c8c8;
+    border-radius: 25px 25px 25px 25px;
+}
+.form-border-rounded .file-custom-right .file-custom-txt {
+    border-radius: 0px;
+    border: 1px solid #c8c8c8;
+}
+@media(min-width: 768px) {
+    .form-border-rounded .file-custom,
+    .form-border-rounded .form-control:focus {
+        border-radius: 0 25px 25px 0;
+    }
+}
+
+/********************* Browse Model2 Ends ************************************/
+/*---------------------------------------------------------------------------*/
 
 
 

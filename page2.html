@@ -14,6 +14,8 @@
     <link href="css/flexslider.custom.css" rel="stylesheet" type="text/css">
     <link href="fonts/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="css/simplelightbox.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
    </head>
 <body>
 <div class="container-fluid">
@@ -35,19 +37,25 @@
                     <div class="accordion-group">
                         <div class="accordion-heading">
                 <div class="form-group">
-                    <select class="form-control myform-control  selectpicker">
-                        <option>Type de bien</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
+
+                    <select id="select-box2-filter" name="typebiens[]" class="form-control " data-placeholder="Type de bien" multiple="multiple">
+                        <option value="6">Type de bien</option>
+                        <option value="99">Appartements</option>
+                        <option value="8">Maisons de Villages / Villes</option>
+                        <option value="10">Divers</option>
                     </select>
-                    <select class="form-control myform-control  selectpicker">
-                        <option>ville</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
-                        <input class="myform-control" type="text" name="prix max" placeholder="prix max." value="">
-                        <input class="myform-control" type="text" name="Surface min." placeholder="Surface min." value="">
-                        <input class="myform-control" type="text" name="Nb de pièces min." placeholder="Nb de pièces min." value="">
+
+
+                        <select id="select-box2-filter2" name="typebiens[]" class="form-control " data-placeholder="Villas" multiple="multiple">
+                            <option value="6">Villas</option>
+                            <option value="99">Appartements</option>
+                            <option value="8">Maisons de Villages / Villes</option>
+                            <option value="10">Divers</option>
+                        </select>
+
+                        <input class="multiselect" type="number" name="prix max" placeholder="prix max." value="">
+                        <input class="multiselect" type="number" name="Surface min." placeholder="Surface min." value="">
+                        <input class="multiselect" type="number" name="Nb de pièces min." placeholder="Nb de pièces min." value="">
                         <button class="batserach btn-default" type="button">Rechercher</button>
                 </div><!--form-group-->
              </div> <!--home id-->
@@ -55,19 +63,23 @@
                     <div id="collapseTwo" class="accordion-body collapse">
                         <div  class="tab-pane fade in active searchbar">
                             <div class="form-group">
-                                <select class="form-control myform-control  selectpicker">
-                                    <option>Date d’annonce</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
+                                <select id="select-box2-filter3" name="typebiens[]" class="form-control " data-placeholder="Date d’annonce" multiple="multiple">
+                                    <option value="6">Date d’annonce</option>
+                                    <option value="99">Appartements</option>
+                                    <option value="8">Maisons de Villages / Villes</option>
+                                    <option value="10">Divers</option>
                                 </select>
-                                <select class="form-control myform-control  selectpicker">
-                                    <option>Elargir à...</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
+
+
+                                <select id="select-box2-filter4" name="typebiens[]" class="form-control " data-placeholder="Elargir à..." multiple="multiple">
+                                    <option value="6">Elargir à...</option>
+                                    <option value="99">Appartements</option>
+                                    <option value="8">Maisons de Villages / Villes</option>
+                                    <option value="10">Divers</option>
                                 </select>
-                                    <input class="myform-control" type="text" name="prix max" placeholder="prix max." value="">
-                                    <input class="myform-control" type="text" name="Surface terrain min." placeholder="Surface terrain min." value="">
-                                    <input class="myform-control" type="text" name="Nb de chambres min." placeholder="Nb de chambres min." value="">
+                                    <input class="multiselect" type="number" name="prix max" placeholder="prix max." value="">
+                                    <input class="multiselect" type="number" name="Surface terrain min." placeholder="Surface terrain min." value="">
+                                    <input class="multiselect" type="number" name="Nb de chambres min." placeholder="Nb de chambres min." value="">
                             </div><!--form-group-->
                         </div> <!--home id-->
                         <div class="checkbox">
@@ -1998,6 +2010,11 @@
     <script type="text/javascript" src="js/custom-functions.js"></script>
     <!-- Gallery JavaScript -->
     <script type="text/javascript" src="js/simple-lightbox.min.js"></script>
-
+    <!-- Bootstrap Multiselect -->
+    <script src="js/bootstrap-multiselect.js"></script>
+    <!-- Bootstrap Select2 -->
+    <script src="js/select2.full.min.js"></script>
+    <!-- Bootstrap Wizard -->
+    <script src="js/jquery.bootstrap.wizard.js"></script>
 </body>
 </html>

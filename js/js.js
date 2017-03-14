@@ -1,6 +1,96 @@
 
 /*Carousel Head*/
 $(document).ready(function(){
+    /*_________ Form Wizard Model1 Starts __________*/
+    /* Form Validate Function */
+    var validateForm = function(tabId, sectionId) {
+        switch(sectionId)
+        {
+            case 'property-inf-request':
+                switch(tabId)
+                {
+                    case 'tab1':
+                        return true;
+                        break;
+                    case 'tab2':
+                        return false;
+                        break;
+                    case 'tab3':
+                        return true;
+                        break;
+
+                }
+        }
+        return true;
+    }
+
+    /* Navigate to Tab Function */
+    var navigateToTab = function(tabEl) {
+        setTimeout(function(){
+            $('.file-input').each(function(index, element) {
+                setFileInputTextElipsis(this);
+            });
+        }, 500);
+
+        /*$('#form-wizard').find('li').removeClass('visited-step');*/
+
+        /* Validation for Current Tab */
+        var curTabHref=tabEl.find('>a').attr('href');
+        var curTabId=curTabHref.substring(1, curTabHref.length);
+        var curSectionId = tabEl.closest('section').attr('id');
+        if(validateForm(curTabId, curSectionId))
+        {
+            /* Validation for Prevous Tabs */
+            tabEl.prevAll().each(function(){
+                var prevTab=$(this);
+                var prevTabHref=prevTab.find('>a').attr('href');
+                var tabId=prevTabHref.substring(1, prevTabHref.length);
+                prevTab.addClass('visited-step');
+                if(validateForm(tabId, curSectionId))
+                    prevTab.find('>a').html('<i class="fa fa-check"></i>');
+            })
+            tabEl.find('>a').html('<i class="fa fa-check"></i>');
+            tabEl.addClass('visited-step');
+        }
+        else
+            return false;
+    }
+
+    $(function() {
+        if($('#form-wizard').length)
+            $('#form-wizard').bootstrapWizard(
+                {
+                    onNext: function(tab, navigation, index) {
+                        return navigateToTab(tab);
+                    },
+                    onPrevious: function(A, b, c){
+                        return true;
+                    },
+                    onTabChange: function(tab, navigation, index) {
+                        return navigateToTab(tab);
+                    }
+                }
+            );
+    });
+    /*_________ Form Wizard Model1 Ends __________*/
+
+    // Multiselect
+    $('#select-box2-filter,#select-box2-filter2,#select-box2-filter3,#select-box2-filter4').multiselect({
+        includeSelectAllOption: true,
+        selectAllText:'Tout sélectionner',
+        allSelectedText:'Tout sélectionné',
+        nSelectedText: 'Sélectionné',
+        numberDisplayed: 1,
+    });
+    $('#localisation_multi').multiselect({
+        includeSelectAllOption: true,
+        selectAllText:'Tout sélectionner',
+        allSelectedText:'Tout sélectionné',
+        nSelectedText: 'Sélectionné',
+        numberDisplayed: 1,
+    });
+    // /Multiselect
+
 /*toggle icon*/
 $('#nav-icon3').click(function(){
 		$(this).toggleClass('open');
