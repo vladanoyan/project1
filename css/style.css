@@ -939,6 +939,10 @@ margin-bottom: 17px;
 {
   padding:0px;
 }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover
+{
+    background-color:#83868a ;
+}
 .nav-search
 {
   background-color: #ebebeb;
@@ -1634,11 +1638,15 @@ right: 18px;
     text-align: center;
     cursor: pointer;
 }
-.iconsservise, .iconsservise img
+.iconsservise
 {
   margin-top: 5px;
-}
 
+}
+.locationicon img
+{
+    vertical-align: -webkit-baseline-middle;
+}
 .locationicon:hover
 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
@@ -3166,6 +3174,10 @@ text-align: -webkit-center;
 {
     margin-right: 15px;
 }
+.input-group
+{
+    width: 100%;
+}
 /*-------------------- Form Sizing Starts ----------------------*/
 .form-md input:not([type='checkbox']), .form-md select, .form-md .form-control {
     padding: 9px 9px;
@@ -3188,8 +3200,32 @@ text-align: -webkit-center;
     height: 50px;
 
 }
+.textarea
+{
+    height: 152px !important;
+    border-radius: 9px;
+    resize: none;
+    overflow: hidden;
+}
 .form-xlg .control-label {
     height: 50px;
+}
+.backbtn
+{
+    border-radius: 0px;
+    border: none;
+    background: #882c2f;
+    color: white;
+    width: 180px;
+    height: 50px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.backbtn:hover
+{
+    background-color: #882c2f;
+    color: #fff;
+    box-shadow: inset 0 0 0 #27496d, 0 4px 15px #193047;
 }
 /*-------------------- Form Sizing Ends ------------------------*/
 /****************** Form Wizard Model1 Starts *******************************/
@@ -3221,6 +3257,7 @@ text-align: -webkit-center;
 .input-group-addon
 {
     padding:6px 30px !important;
+    width: 85px;
 }
 /* z-index can be set also dynamically using jquery.
 In this case we don't need it as there are max 4 tabs */
@@ -3281,6 +3318,12 @@ In this case we don't need it as there are max 4 tabs */
     line-height: 40px;
     margin-top: 20px;
 
+}
+.form-wizard-m1 .pager li>a.border-rounded:hover
+{
+    background-color: #882c2f;
+    color: #fff;
+    box-shadow: inset 0 0 0 #27496d, 0 4px 15px #193047;
 }
 .wizard
 {
@@ -3348,9 +3391,16 @@ In this case we don't need it as there are max 4 tabs */
         background: #882c2f;
     }
 }
+@media screen and (max-width:990px) {
+    .form-wizard-m1 .wizard-nav li:nth-child(4n+3):not(:first-of-type):before
+
+    {
+        display: none;
+    }
+}
 @media (min-width: 480px) and (max-width: 767px) {
-    .form-wizard-m1 .wizard-nav li:nth-child(4n+3):not(:first-of-type):before {
-        background: transparent;
+    .form-wizard-m1 .wizard-nav li:nth-child(1n+1):not(:first-of-type):before {
+        display: none;
     }
 }
 @media(min-width: 992px){
@@ -3716,7 +3766,10 @@ the drop down is opened above and the form tooltip  is under it */
   margin-bottom: 45px;
 
 }
-
+#property-inf-submit
+{
+    margin-top: 50px;
+}
 
 
 
@@ -3845,42 +3898,407 @@ label.browse-m2.file {
 }
 /*--------------------  Browse Model2 Colors End ------------*/
 
-/* Override */
-.form-border-rounded .file-custom,
-.form-border-rounded .form-control:focus {
-    outline: none;
-    border: 1px solid #c8c8c8;
-    border-radius: 25px 25px 25px 25px;
-}
 .form-border-rounded .file-custom-right .file-custom-txt {
     border-radius: 0px;
     border: 1px solid #c8c8c8;
 }
-@media(min-width: 768px) {
-    .form-border-rounded .file-custom,
-    .form-border-rounded .form-control:focus {
-        border-radius: 0 25px 25px 0;
+
+@media screen and (max-width:420px) {
+    .backbtn, .form-wizard-m1 .pager li>a.border-rounded, .pager li>span.border-rounded
+    {
+        width:155px !important;
     }
 }
 
 /********************* Browse Model2 Ends ************************************/
 /*---------------------------------------------------------------------------*/
 
+/*page6 CSS*/
+
+.Title_page6 {
+    border:1px solid #882c2f;
+    width: 503px;
+    margin:0 auto;
+    margin-bottom: 40px;
+}
+.page6
+{
+    margin-bottom: 45px;
+
+}
+
+#loan-simualtion
+{
+    margin-top: 50px;
+}
+@media screen and (max-width:420px) {
+    .calculator-btn
+    {
+        width:96px !important;
+    }
+}
+.title-block-m1-v1.title-block-inner-clr
+{
+    border-bottom: 1px solid #882c2f;
+    margin-bottom: 20px;
+}
+.calculator-btn
+{
+    width:180px;
+    height:50px;
+    border-radius:25px;
+    color: #fff;
+    background-color: #882c2f;
+    line-height: 35px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.calculator-btn:hover
+{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    background-color:#882c2f;
+    border:none;
+}
+.form-border-rounded .form-control:focus
+{
+   box-shadow: none;
+    border-color: gainsboro;
+}
+.form-control
+{
+    border-radius: 0px;
+}
+
+/*page7 CSS*/
 
 
+.Title_page7 {
+    border:1px solid #882c2f;
+    width: 503px;
+    margin:0 auto;
+    margin-bottom: 40px;
+
+}
+.page7
+{
+    margin-bottom: 45px;
+}
+
+/*page8 CSS*/
 
 
+.Title_page8 {
+    border:1px solid #882c2f;
+    width: 303px;
+    margin:0 auto;
+    margin-bottom: 40px;
+
+}
+.page8
+{
+    margin-bottom: 45px;
+}
 
 
+/*page9 CSS*/
 
 
+.Title_page9 {
+    border:1px solid #882c2f;
+    width: 186px;
+    margin:0 auto;
+    margin-bottom: 40px;
+
+}
+.page9
+{
+    margin-bottom: 45px;
+}
+
+.error
+{
+    padding: 2px 0px;
+}
 
 
+/********************** Popup Contact Model2 Starts **********************************/
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- Popup Contact Model2  Content Starts -----------*/
+/*--- Modal General Styles Start ---*/
+.popup-contact-m2 .modal-header {
+    padding: 0;
+    border-bottom: none;
+}
+.popup-contact-m2 .modal-content {
+    border-radius: 0px;
+}
+.popup-contact-m2 .modal-content > div[class*='col-'] {
+    padding: 0;
+}
+.popup-contact-m2 .modal-content div.modal-left-content[class*='col-'] {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.popup-contact-m2 .modal-dialog {
+    margin: 60px 25px;
+}
+
+/* Modal Close Icon */
+.popup-contact-m2 button.modal-close {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 3px;
+    z-index: 1;
+}
+.popup-contact-m2 button.modal-close:focus,
+.popup-contact-m2 button.modal-close:hover {
+    outline: none;
+}
+.popup-contact-m2 .modal-header .close {
+    margin: -3px 0px 0 0;
+    z-index: 2;
+}
+/*--- Modal General Styles End ---*/
+
+/*--- Modal Header Starts ---*/
+.popup-contact-m2 header {
+    position: relative;
+}
+.popup-contact-m2 .modal-img-container {
+    max-height: 280px;
+    overflow: hidden;
+}
+.popup-contact-m2 .modal-img-container img {
+    width: 100%;
+    height: auto;
+    min-width: 150px;
+}
+.popup-contact-m2 .modal-logo {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    z-index: 10;
+    transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 1px solid #bbbbbb;
+}
+.popup-contact-m2 .modal-logo img {
+    width: 125px;
+    height: auto;
+}
+.popup-contact-m2  ul.modal-header-lst {
+    margin: 50px 0 100px 0;
+    padding: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+.popup-contact-m2  ul li {
+    padding-left: 28px;
+    padding-right: 28px;
+    color: #505050;
+}
+/*--- Modal Header Ends ---*/
+
+/*--- Modal Note ---*/
+.popup-contact-m2 .modal-note {
+    padding-left: 27px;
+    padding-right: 27px;
+    text-align: left;
+}
+
+/*--- Popup Contact Model2 Form Starts ---*/
+.popup-contact-m2 .form-block {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 14px;
+}
+.popup-contact-m2 .form-block .form-col-wrapper[class*='col-'] {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.popup-contact-m2 .form-block .form-col-wrapper > div[class*='col-'] {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.popup-contact-m2 .form-block textarea,
+.popup-contact-m2 .form-block textarea:focus {
+    width: 100%;
+    height: 170px;
+}
+.popup-contact-m2 .form-btn-container {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/*--- Popup Contact Model2 Form Ends ---*/
+/*-------------------- Popup Contact Model2  Content Ends -----------*/
+
+/*-------------------- Popup Contact Model2 Colors Start -----------*/
+/*---- Popup Contact Model2 Color Starts ----*/
+.popup-contact-m2 li{
+    color: #ffffff;
+}
+.popup-contact-m2 button.modal-close,
+.popup-contact-m2 button.modal-close:hover,
+.popup-contact-m2 button.modal-close:focus {
+    background-color: #ad93ca;
+    color: #FFF;
+}
+.popup-contact-m2 p{
+    margin: 10px 0 0 0;
+    line-height: 1;
+}
+.popup-contact-m2 p:last-child{
+    color: #ad93ca;
+}
 
 
+/*modal CSS*/
+.modal-header
+{
+    padding: 0px;
+}
+.modalimage
+{
 
+    width:100%;
+}
+.modalLog
+{
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: 215px;
+    background-color: rgb(253, 253, 253);
+    height: 180px;
+}
 
+.modal-hover
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0px;
+}
 
+.modal-dialog
+{
+    width: 975px;
+    margin: 120px auto;
+}
+.modal-header-lst
+{
+    color: #fff;
+}
+
+.modal-content
+{
+    border-radius: 0px;
+    background-color: rgb(230, 230, 224);
+}
+.close
+{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 47px;
+    color: #fff !important;
+    opacity: 1 !important;
+    font-weight: 300;
+    z-index:999;
+}
+/*!*-------------------- Popup Contact Model2 Colors Start -----------*!*/
+
+/*!*----------------- Popup Contact Model2 Media Query Starts -----------*!*/
+/*@media (max-width:479px) {*/
+    /*.popup-contact-m2 ul.modal-header-lst {*/
+        /*width: auto;*/
+    /*}*/
+    /*.popup-contact-m2 ul.modal-header-lst li {*/
+        /*display: block;*/
+        /*width: auto;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-note {*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
+/*@media (min-width:768px) {*/
+    /*.popup-contact-m2 .modal-dialog {*/
+        /*width: 700px;*/
+        /*margin: 50px auto;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 992px) {*/
+    /*.popup-contact-m2 .modal-dialog {*/
+        /*width: 975px;*/
+        /*margin: 50px auto;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-content {*/
+        /*border-radius: 0px;*/
+        /*display: table;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-img-container {*/
+        /*margin-left: -1px;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-content div.modal-left-content {*/
+        /*display: table-cell;*/
+        /*height: 100%;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-content div.modal-right-content {*/
+        /*display: table-cell;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-header {*/
+        /*height: 100%;*/
+        /*display: inline-block;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-img-container {*/
+        /*padding-right: 18px;*/
+    /*}*/
+    /*.popup-contact-m2 ul.modal-header-lst + div {*/
+        /*position: absolute;*/
+        /*bottom: 18px;*/
+        /*left: 50%;*/
+        /*transform: translateX(-50%);*/
+        /*-o-transform: translateX(-50%);*/
+        /*-moz-transform: translateX(-50%);*/
+        /*-webkit-transform: translateX(-50%);*/
+        /*-ms-transform: translateX(-50%);*/
+    /*}*/
+    /*.popup-contact-m2  ul li {*/
+        /*padding-left: 28px;*/
+        /*padding-right: 0px;*/
+    /*}*/
+
+    /*.popup-contact-m2 .modal-body {*/
+        /*padding: 0 15px 0 0;*/
+    /*}*/
+    /*.popup-contact-m2 .modal-note {*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
+/*!*-------------------- Popup Contact Model2 Media Query Ends -----------*!*/
+
+/*!********************** Popup Contact Model2  Ends **********************************!*/
+/*!*----------------------------------------------------------------------------------*!*/
 
 
 

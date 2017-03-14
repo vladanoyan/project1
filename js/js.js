@@ -1,6 +1,12 @@
 
 /*Carousel Head*/
 $(document).ready(function(){
+
+
+
+
+
+
     /*_________ Form Wizard Model1 Starts __________*/
     /* Form Validate Function */
     var validateForm = function(tabId, sectionId) {
