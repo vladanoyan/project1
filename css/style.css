@@ -1405,6 +1405,7 @@ margin-bottom: 17px;
   line-height: 1.714;
   border:none;
   margin-top: 14px;
+    vertical-align: top;
 }
 .buttonCall2:hover{
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
@@ -1486,6 +1487,7 @@ margin-bottom: 17px;
     border: 1px solid #b4b4b4;
     padding: 19px 23px;
     display: inline-block;
+    background-color: #fdfdfd;
     
 }
 .agencysudluberon
@@ -1708,8 +1710,8 @@ right: 18px;
 .no-touchevents .pagination-m3 ul.pagination li:hover a,
 .pagination-m3 ul.pagination li:focus a,
 .pagination-m3 ul.pagination li:active a {
-  background-color: #f0f0f0;
-  color: #969696;
+ 
+  background-color: #969696;
 }
 
 .pagination-m3 ul.pagination li.active  a {
@@ -1726,12 +1728,15 @@ right: 18px;
 .pagination-m3 ul.pagination li a:hover
 {
   background-color: #969696;
+    color: #fff;
 }
 @media screen and (max-width:442px) {
     .pagination-m3 ul.pagination li a
 
     {
         margin-left: 0px;
+        height: 33px;
+        width: 30px;
     }
 }
 /*-------------------- Pagination Model3 Colors End -----------*/
@@ -2529,6 +2534,7 @@ text-align: -webkit-center;
 
 .dpe-ges-block-m3 .dpe-ges-blck-txt {
     font-size: 10px;
+    margin-bottom: 5px;
 }
 .dpe-ges-block-m3 .dpe-ges-graph ul li {
     height: 22px;
@@ -2673,25 +2679,7 @@ text-align: -webkit-center;
 }
 /* Btn Hover Block Ends */
 
-/* DPE-GES Block General Colors Start */
-.dpe-ges-block-m3 .dpe-ges-blck-txt {
-    color: #505050;
-}
-.dpe-ges-block-m3 .dpe-ges-graph ul li span {
-    color: #000;
-}
-.dpe-ges-block-m3 .dpe-ges-graph ul li.selected span {
-    color: #000;
-    font-weight: bold;
-}
 
-.dpe-ges-block-m3 .dpe-ges-graph ul li > div:nth-child(1):after {
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-    border-left: 10px solid green;
-    border-left-color: inherit;
-}
-/* DPE-GES Block General Colors End */
 
 /* Hover Content Li Selected State Colors Start */
 .dpe-ges-block-m3 .dpe-ges-graph ul li.selected > div > div > span {
@@ -2897,9 +2885,7 @@ text-align: -webkit-center;
 /********************** DPE GES Block Model1 Version1 Starts  **************************/
 /*-------------------------------------------------------------------------------------*/
 /*-------------------- DPE GES Block Model1 Version1 Content Starts --------*/
-.dpe-ges-block-m1-v1 .dpe-ges-blck-txt {
-    font-size: 10px;
-}
+
 .dpe-ges-block-m1-v1  .dpe-ges-graph ul li {
     height: 22px;
     padding-right: 0px;
@@ -3020,6 +3006,8 @@ text-align: -webkit-center;
 /* DPE-GES Block General Colors Start */
 .dpe-ges-block-m1-v1 .dpe-ges-blck-txt {
     color: #505050;
+    margin-bottom: 5px;
+    font-size: 10px;
 }
 .dpe-ges-block-m1-v1 .dpe-ges-graph ul li span {
     color: #000;
@@ -3203,7 +3191,7 @@ text-align: -webkit-center;
 .textarea
 {
     height: 152px !important;
-    border-radius: 9px;
+    border-radius: 9px !important;
     resize: none;
     overflow: hidden;
 }
@@ -3584,7 +3572,7 @@ In this case we don't need it as there are max 4 tabs */
     border-radius: 0px;
 }
 .form-input-group-m2 div.form-input-col4 {
-    margin-left: -2px;
+  /*  margin-left: -2px;*/
 }
 .form-input-group-m2 div.form-input-col4 .form-control,
 .form-input-group-m2 div.form-input-col4 .custom-multiselect-btn,
@@ -4180,20 +4168,24 @@ label.browse-m2.file {
 }
 .modalLog
 {
+    padding:15px;
     position: absolute;
     z-index: 999;
     top: 30px;
     left: 50%;
     right: 50%;
     transform: translate(-50%,-50%);
-    width: 215px;
-    background-color: rgb(253, 253, 253);
-    height: 180px;
+    width: 20%;
+    background-color: #fdfdfd;
+    box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
+    -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
+    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
+    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
 }
 
 .modal-hover
 {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 80px;
     position: absolute;
@@ -4202,18 +4194,30 @@ label.browse-m2.file {
 
 .modal-dialog
 {
-    width: 975px;
+    max-width: 900px;
+    width:87%;
     margin: 120px auto;
+    background-color: rgba(230, 230, 224, 0.85);
 }
 .modal-header-lst
 {
     color: #fff;
+    column-count: 3;
+    width: 100%;
+    padding: 19px 6px;
+    font-size: 15px;
+}
+.modal-header-lst  li
+{
+    display: inline-block;
+    text-align: justify;
 }
 
 .modal-content
 {
+
     border-radius: 0px;
-    background-color: rgb(230, 230, 224);
+
 }
 .close
 {
@@ -4226,80 +4230,35 @@ label.browse-m2.file {
     font-weight: 300;
     z-index:999;
 }
-/*!*-------------------- Popup Contact Model2 Colors Start -----------*!*/
+@media screen and (max-width:1030px) {
+    .modal-header-lst
+    {
+        column-count: 2;
+        padding-top: 10px;
 
-/*!*----------------- Popup Contact Model2 Media Query Starts -----------*!*/
-/*@media (max-width:479px) {*/
-    /*.popup-contact-m2 ul.modal-header-lst {*/
-        /*width: auto;*/
-    /*}*/
-    /*.popup-contact-m2 ul.modal-header-lst li {*/
-        /*display: block;*/
-        /*width: auto;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-note {*/
-        /*text-align: center;*/
-    /*}*/
-/*}*/
-/*@media (min-width:768px) {*/
-    /*.popup-contact-m2 .modal-dialog {*/
-        /*width: 700px;*/
-        /*margin: 50px auto;*/
-    /*}*/
-/*}*/
-/*@media (min-width: 992px) {*/
-    /*.popup-contact-m2 .modal-dialog {*/
-        /*width: 975px;*/
-        /*margin: 50px auto;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-content {*/
-        /*border-radius: 0px;*/
-        /*display: table;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-img-container {*/
-        /*margin-left: -1px;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-content div.modal-left-content {*/
-        /*display: table-cell;*/
-        /*height: 100%;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-content div.modal-right-content {*/
-        /*display: table-cell;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-header {*/
-        /*height: 100%;*/
-        /*display: inline-block;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-img-container {*/
-        /*padding-right: 18px;*/
-    /*}*/
-    /*.popup-contact-m2 ul.modal-header-lst + div {*/
-        /*position: absolute;*/
-        /*bottom: 18px;*/
-        /*left: 50%;*/
-        /*transform: translateX(-50%);*/
-        /*-o-transform: translateX(-50%);*/
-        /*-moz-transform: translateX(-50%);*/
-        /*-webkit-transform: translateX(-50%);*/
-        /*-ms-transform: translateX(-50%);*/
-    /*}*/
-    /*.popup-contact-m2  ul li {*/
-        /*padding-left: 28px;*/
-        /*padding-right: 0px;*/
-    /*}*/
-
-    /*.popup-contact-m2 .modal-body {*/
-        /*padding: 0 15px 0 0;*/
-    /*}*/
-    /*.popup-contact-m2 .modal-note {*/
-        /*text-align: center;*/
-    /*}*/
-/*}*/
-/*!*-------------------- Popup Contact Model2 Media Query Ends -----------*!*/
-
-/*!********************** Popup Contact Model2  Ends **********************************!*/
-/*!*----------------------------------------------------------------------------------*!*/
-
+    }
+}
+@media screen and (max-width:710px) {
+    .modal-header-lst
+    {
+       font-size: 13px;
+        display: inline-table;
+    }
+    .modalLog{
+        top:0;
+    }
+}
+.modal-footer
+{
+    border-top: none!important;
+}
+.finish-btn
+{
+    width:100%
+}
+.finish-btn>a{
+    width:100% !important;
+}
 
 
 

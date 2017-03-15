@@ -3,10 +3,6 @@
 $(document).ready(function(){
 
 
-
-
-
-
     /*_________ Form Wizard Model1 Starts __________*/
     /* Form Validate Function */
     var validateForm = function(tabId, sectionId) {
@@ -39,6 +35,7 @@ $(document).ready(function(){
         }, 500);
 
         /*$('#form-wizard').find('li').removeClass('visited-step');*/
+
 
         /* Validation for Current Tab */
         var curTabHref=tabEl.find('>a').attr('href');
