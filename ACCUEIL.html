@@ -17,6 +17,7 @@
     <link href="css/bootstrap-multiselect.css" rel="stylesheet">
     <link href="css/select2.css" rel="stylesheet">
 </head>
+
 <body>
 
 <nav class="navbar navbar-inverse text-Center">
@@ -34,19 +35,19 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
 
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Agence</a></li>
+                <li><a href="ACCUEIL.html">Accueil</a></li>
+                <li><a href="L'AGENCE.html">Agence</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ventes
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="FICHE_BIEN.html">Ventes
                         <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Page 1-1</a></li>
-                        <li><a href="#">Page 1-2</a></li>
+                        <li><a href="LISTING_BIEN.html">Listing</a></li>
+                        <li><a href="404.html">ERROR</a></li>
                         <li><a href="#">Page 1-3</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Location
+                <a class="dropdown-toggle" data-toggle="dropdown" href="MENTIONS_LEGALES.html">Location
                     <span class="glyphicon glyphicon-chevron-down"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Page 1-1</a></li>
@@ -55,7 +56,7 @@
                 </ul>
             </li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Locations Saisonnières
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="ESTIMATION.html">Locations Saisonnières
                         <span class="glyphicon glyphicon-chevron-down"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Page 1-1</a></li>
@@ -63,16 +64,14 @@
                         <li><a href="#">Page 1-3</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Que recherchez-vous ?</a></li>
-                <li><a href="#">Confiez-nous votre bien</a></li>
-                <li><a href="#">Simulation de prêt</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" onclick="loadDoc('RECHERCHE.html')">Que recherchez-vous ?</a></li>
+                <li><a href="#" onclick="loadDoc('FICHE_BIEN.html')">Confiez-nous votre bien</a></li>
+                <li><a href="#" onclick="loadDoc('SIMULATION_DE_PRET.html')">Simulation de prêt</a></li>
+                <li><a href="#" onclick="loadDoc('CONTACT.html')">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav><!--navbar-->
-
-
 
 <div class="mainheader">
     <div class="container-fluid header">
@@ -128,7 +127,10 @@
     </div> <!--container-center-->
 </div><!-- mainheader -->
 
-<div class="container-fluid content">
+<!--**********************************************************************************************************************-->
+
+
+<div id="ajax" class="container-fluid content">
         <div class="row text-center">
         <h1 class="Coups_de_Coeur">Coups de Coeur</h1>
        <div class="Title_bottom_border"></div>
@@ -264,6 +266,9 @@
         </div><!-- row -->
     </div> <!--container-Fluid -->
 
+
+
+<!--**********************************************************************************************************************-->
 
 <!-- Footer Section Model2 Starts -->
 <footer id="footer" class="footer-m2 container-fluid">
@@ -427,9 +432,33 @@
     </div>
     </div>
     <!-- Footer Copyright Block Ends -->
-
+</div>
 </footer>
 <!-- Footer Section Model2 Ends -->
+
+
+
+
+
+<script>
+
+
+
+    function loadDoc(n) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("ajax").innerHTML = this.responseText;
+
+            }
+        };
+        xhttp.open("GET", n, true);
+
+        xhttp.send();
+    }
+
+</script>
+
 
     <!-- jQuery -->
     <script src="js/jquery-3.1.1.min.js"></script>
