@@ -38,6 +38,7 @@ $(document).ready(function(){
 
         /*__________File Input Elipsis Functions Start__________*/
         var setFileInputTextElipsis=function(cur) {
+
             var filename = $(cur).val().split('\\').pop();
             if(filename=='')
                 filename=$(cur).attr('data-placeholder');

@@ -357,6 +357,17 @@ color: #fff;
 font-weight: 600;
 text-shadow: -3px 0px 3px rgb(38, 38, 38);
 }
+.images:hover,
+.images1:hover,
+.images2:hover,
+.images3:hover,
+.images4:hover,
+.images5:hover,
+.images6:hover
+
+{
+transform: scale(1.1,1.1) !important;
+}
 
 .images{
 position: relative;
@@ -880,7 +891,10 @@ margin-bottom: 17px;
 .buttonCall:hover{
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
-
+.buttonCall:hover>.fa-phone
+{
+    transform: rotate(320deg);
+}
 .circle
 {
     margin-right: 8px;
@@ -1411,7 +1425,10 @@ margin-bottom: 17px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
-
+.buttonCall2:hover>.fa-phone
+{
+    transform: rotate(320deg);
+}
 /*--- Listing Item Contacts ---*/
 .listing-m3 div.listing-item-contacts[class*='col'] {
   
@@ -3200,7 +3217,7 @@ text-align: -webkit-center;
 }
 .backbtn
 {
-    border-radius: 0px;
+    border-radius: 4px;
     border: none;
     background: #882c2f;
     color: white;
@@ -3297,7 +3314,7 @@ In this case we don't need it as there are max 4 tabs */
 }
 .form-wizard-m1 .pager li>a.border-rounded,
 .pager li>span.border-rounded {
-    border-radius: 0px;
+    border-radius: 4px;
     border: none;
     background: #882c2f;
     color: white;
