@@ -532,7 +532,7 @@ clear: both;
 {
 border-radius: 3px;
 box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
-width: 236px important;
+width: 236px !important;
 background-color: white;
 
 }
@@ -540,10 +540,7 @@ background-color: white;
   height: 153px;
   object-fit: cover;
 }
-.ourSecondCarousel .owl-item
-{
-  width: none;
-}
+
 .hr {
 border: 1px solid white;
 position: absolute;
@@ -753,7 +750,7 @@ body>footer.footer-m2 {
 .footer-m2 .footer-copyright-info {
   padding-left: 1px;
   padding-right: 0px;
-}inline-flex;inline-flex;
+}
 .footer-m2 .footer-copyright-logo {
 
   padding-left: 2px;
@@ -1319,12 +1316,12 @@ margin-bottom: 17px;
 }
 
 /*--- Listing Item Header ---*/
-.listing-m3 .listing-item-header h2,
-{  margin: 0;
-  padding: 0;
-  text-transform: capitalize;
-  font-size: 1.5em;
-}
+/*.listing-m3 .listing-item-header h2,*/
+/*{  margin: 0;*/
+  /*padding: 0;*/
+  /*text-transform: capitalize;*/
+  /*font-size: 1.5em;*/
+/*}*/
 
 /*--- Listing Description Block Starts ---*/
 .listing-m3 .listing-hr {
@@ -2499,8 +2496,8 @@ text-align: -webkit-center;
     }
 }
 
-* ********************** DPE GES Block Model3 Starts ******************************/
-/*-------------------------------------------------------------------------------*/
+/** ********************** DPE GES Block Model3 Starts ******************************!*/
+/*!*-------------------------------------------------------------------------------*!*/
 /*-------------------- DPE GES Block Model3 Content Starts --------*/
 .locimg
 {

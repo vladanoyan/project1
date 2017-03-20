@@ -38,7 +38,6 @@ $(document).ready(function(){
 
         /*__________File Input Elipsis Functions Start__________*/
         var setFileInputTextElipsis=function(cur) {
-
             var filename = $(cur).val().split('\\').pop();
             if(filename=='')
                 filename=$(cur).attr('data-placeholder');
@@ -129,49 +128,49 @@ $(document).ready(function(){
 
 /*toggle icon*/
 $('#nav-icon3').click(function(){
-		$(this).toggleClass('open');
-	});
+        $(this).toggleClass('open');
+    });
 
 
 
     $('.ourNewCarousel').owlCarousel({
-    	loop: true,
+        loop: true,
         items:1,
         autoplay:true,
-		animateOut: 'fadeOut'
+        animateOut: 'fadeOut'
     });
 
 
     $('.ourSecondCarousel').owlCarousel({
-		margin: 20,
-		loop: true,
-		autoplay:true,
-		nav: true,
-		autoplayTimeout:3000,
-		navText: ["<",">"],
-		responsive:{
-    		0:{
-	            items:1,
-	            nav:true
-	        },
-	        550:{
-	            items:2,
-	            nav:true
-	        },
-	        1000:{
-	            items:3,
-	            nav:true
-	        },
-	        1200:{
-	            items:4,
-	            nav:true
-	        }
+        margin: 20,
+        loop: true,
+        autoplay:true,
+        nav: true,
+        autoplayTimeout:3000,
+        navText: ["<",">"],
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            550:{
+                items:2,
+                nav:true
+            },
+            1000:{
+                items:3,
+                nav:true
+            },
+            1200:{
+                items:4,
+                nav:true
+            }
     }
     });
 /*chenge btn text*/
 
-    	$('#equipment').click(function(){
-    	$('#equipment').toggleClass('flashOn flash')
+        $('#equipment').click(function(){
+        $('#equipment').toggleClass('flashOn flash')
     });
 
    /*__________Listing Model3 Functions Start_________*/
