@@ -2497,6 +2497,26 @@ text-align: -webkit-center;
 /** ********************** DPE GES Block Model3 Starts ******************************!*/
 /*!*-------------------------------------------------------------------------------*!*/
 /*-------------------- DPE GES Block Model3 Content Starts --------*/
+
+
+/* DPE-GES Block General Colors Start */
+.dpe-ges-block-m3 .dpe-ges-blck-txt {
+    color: #505050;
+}
+.dpe-ges-block-m3 .dpe-ges-graph ul li span {
+    color: #000;
+}
+.dpe-ges-block-m3 .dpe-ges-graph ul li.selected span {
+    color: #000;
+    font-weight: bold;
+}
+.dpe-ges-block-m3 .dpe-ges-graph ul li > div:nth-child(1):after {
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 10px solid green;
+    border-left-color: inherit;
+}
+/* DPE-GES Block General Colors End */
 .locimg
 {
     display: inline-block;
