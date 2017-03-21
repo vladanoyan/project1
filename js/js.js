@@ -1,6 +1,62 @@
 
 /*Carousel Head*/
 $(document).ready(function(){
+/*__________Tooltip Initialization Starts__________*/
+var startTooltip= function() {
+    var hideAllTooltips = function() {
+        $('[data-toggle="tooltip"]').each(function() {
+            $(this).tooltip('hide');
+            $(this).attr('data-visible',false);
+        });
+    };
+
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').bind('click', function(e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+        if($(this).attr('data-visible')=='true')
+        {
+            $(this).tooltip('hide');
+            $(this).attr('data-visible',false);
+        }
+        else
+        {
+            $(this).tooltip('show');
+            $(this).attr('data-visible',true);
+        }
+
+    });
+
+    $(document).click(function (e) {
+        $('[data-toggle="tooltip"]').attr('data-visible',false);
+    });
+}
+
+$(function() {
+    startTooltip();
+});
+$(document).ajaxComplete(function() {
+    startTooltip();
+});
+/*__________Tooltip Initialization Ends__________*/
+
+
+/*_________Changing Toggle Button Active State Starts__________*/
+$(".navbar-toggle").click(function(){
+    if($("div .navbar-collapse").attr("aria-expanded")=="true")
+    {
+        $(".navbar-toggle .icon-bar").addClass('navbar-toggle-normal');
+        $(".navbar-toggle .icon-bar").removeClass('navbar-toggle-active');
+    }
+    else
+    {
+        $(".navbar-toggle .icon-bar").removeClass('navbar-toggle-normal');
+        $(".navbar-toggle .icon-bar").addClass('navbar-toggle-active');
+    }
+
+});
+/*_________Changing Toggle Button Active State Ends__________*/
 
 
     /*_________ Form Wizard Model1 Starts __________*/
