@@ -17,12 +17,13 @@ ul li{
 @font-face {
   font-family: 'Open Sans Bold';
   src: url('../fonts/OpenSans/OpenSans-Semibold.woff');
+  font-weight:700;
 }
 @font-face
 {
   font-family:"Open Sans Light";
   src:url("../fonts/OpenSans/OpenSans-Light.woff") format("woff");
-  font-weight:normal;
+  font-weight:300;
   font-style:normal;
 }
 
@@ -87,7 +88,7 @@ body
   transition: .25s ease-in-out;
 }
 #nav-icon3 span:nth-child(1) {
-  top: 0px;
+  top: 0;
   height: 4px;
 }
 
@@ -101,7 +102,7 @@ body
 
 #nav-icon3.open span:nth-child(1) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -121,7 +122,7 @@ body
 
 #nav-icon3.open span:nth-child(4) {
   top: 18px;
-  width: 0%;
+  width: 0;
   left: 50%;
 }
 
@@ -152,14 +153,14 @@ body
 }
 .dropdown-menu
 {
-  padding:0px 0;
+  padding:0 0;
 }
 .navbar-inverse
 {
   background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
-  border-radius: 0px;
+  border-radius: 0;
   position: fixed;
   z-index:111;
   width:100%;
@@ -247,10 +248,10 @@ position: relative;
     transform: translate(50%, 0%);
     background-color: rgba(251,251,251,0.7);
     height: 100%;
-    box-shadow: inset 0px 0px 0px -100px #ABABAB, 0px 0px 14px 0px #242424;
-    -webkit-box-shadow: inset 0px 0px 0px -100px #ABABAB, 0px 0px 14px 0px #242424;
-    -moz-box-shadow: inset 0px 0px 0px -100px #ABABAB,0px 0px 14px 0px #242424;
-    -o-box-shadow: inset 0px 0px 0px -100px #ABABAB,0px 0px 14px 0px #242424;
+    box-shadow: inset 0 0 0 -100px #ABABAB, 0 0 14px 0 #242424;
+    -webkit-box-shadow: inset 0 0 0 -100px #ABABAB, 0 0 14px 0 #242424;
+    -moz-box-shadow: inset 0 0 0 -100px #ABABAB,0 0 14px 0 #242424;
+    -o-box-shadow: inset 0 0 0 -100px #ABABAB,0 0 14px 0 #242424;
 
 }
 
@@ -348,14 +349,14 @@ position: relative;
 text-decoration: none;
 color: #fff;
 font-weight: 600;
-text-shadow: -3px 0px 3px rgb(38, 38, 38);
+text-shadow: -3px 0 3px rgb(38, 38, 38);
 }
 .PROPRIETES1:hover
 {
 text-decoration: none;
 color: #fff;
 font-weight: 600;
-text-shadow: -3px 0px 3px rgb(38, 38, 38);
+text-shadow: -3px 0 3px rgb(38, 38, 38);
 }
 .images:hover,
 .images1:hover,
@@ -437,7 +438,7 @@ display: inline-block;
   font-size: 12px;
   font-family: "Open Sans";
   color: #fff;
-  text-shadow: 0px 2px 4.76px rgba(0, 0, 0, 0.68);
+  text-shadow: 0 2px 4.76px rgba(0, 0, 0, 0.68);
   -moz-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
   -webkit-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
   -ms-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
@@ -450,7 +451,7 @@ display: inline-block;
   font-size: 12px;
   font-family: "Open Sans";
   color: #fff;
-  text-shadow: 0px 2px 4.76px rgba(0, 0, 0, 0.68);
+  text-shadow: 0 2px 4.76px rgba(0, 0, 0, 0.68);
   -moz-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
   -webkit-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
   -ms-transform: matrix( 1.32477994831952,0,0,1.32940737583161,0,0);
@@ -496,7 +497,7 @@ z-index: 39;
   line-height: 1.846;
   position: absolute;
   left: 12px;
-  top: 0px;
+  top: 0;
   width: 60px;
   height: 24px;
   z-index: 111;
@@ -522,7 +523,7 @@ z-index: 39;
 {
 text-decoration: underline;
 color: inherit;
-text-shadow: -3px 0px 9px rgb(38, 38, 38);
+text-shadow: -3px 0 9px rgb(38, 38, 38);
 }
 .ourSecondCarousel
 {
@@ -531,7 +532,7 @@ clear: both;
 .ourSecondCarousel .owl-item
 {
 border-radius: 3px;
-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
 width: 236px !important;
 background-color: white;
 
@@ -545,14 +546,12 @@ background-color: white;
 border: 1px solid white;
 position: absolute;
 top: 6px;
-position: absolute;
 width:100%;
 }
 .hr1 {
 border: 1px solid white;
 position: absolute;
 top: 58px;
-position: absolute;
 width:100%;
 }
 .Background {
@@ -667,8 +666,8 @@ body>footer.footer-m2 {
   width: 100%;
   height: auto;
   display: inline-block;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   min-width: 300px;
   vertical-align: top;
 }
@@ -706,12 +705,12 @@ body>footer.footer-m2 {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 1px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 .footer-m2 .footer-partners {
   line-height: 46px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .footer-m2 .footer-partners div:nth-child(2) {
   padding-left: 5px;
@@ -749,12 +748,12 @@ body>footer.footer-m2 {
 }
 .footer-m2 .footer-copyright-info {
   padding-left: 1px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 .footer-m2 .footer-copyright-logo {
 
   padding-left: 2px;
-  padding-right: 0px;
+  padding-right: 0;
 
 }
 .footer-m2 .footer-copyright-block .footer-copyright-logo p {
@@ -948,7 +947,7 @@ margin-bottom: 17px;
 }
 .formcontainer
 {
-  padding:0px;
+  padding:0;
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover
 {
@@ -979,7 +978,7 @@ margin-bottom: 17px;
 }
 .form-group
 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .searchbar {
   min-height: 67px;
@@ -989,7 +988,7 @@ margin-bottom: 17px;
 {
   width: 190px;
   height: 39px;
-  border-radius: 0px;
+  border-radius: 0;
   display: inline-block;
   padding: 6px 12px;
   margin-left: 12px;
@@ -999,7 +998,7 @@ margin-bottom: 17px;
 {
     width: 190px!important;
     height: 39px!important;
-    border-radius: 0px!important;
+    border-radius: 0!important;
     display: inline-block!important;
     margin-left: 12px !important;
     text-align: left !important;
@@ -1016,7 +1015,7 @@ margin-bottom: 17px;
   background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
-  box-shadow: inset 0px 0px 1px 0px rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.75);
   width: 115px;
   height: 39px;
   font-size: 14px;
@@ -1095,7 +1094,7 @@ margin-bottom: 17px;
 }
 .checkbox
 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 
@@ -1134,7 +1133,7 @@ margin-bottom: 17px;
     background-color: #969696;
     color: #FFF;
     border: 1px solid #969696;
-    border-radius: 0px;
+    border-radius: 0;
 }
 .soc:hover
 {
@@ -1148,14 +1147,14 @@ margin-bottom: 17px;
     color: #fff;
     background-color: rgba(16, 16, 14, 0.51);
     border: 1px solid #7c1d20;
-    border-radius: 0px;
+    border-radius: 0;
 }
 .btn-group-sm>.btn, .btn-sm
 {
      color: #7f2124;
     background-color: rgba(255, 255, 255, 0.59);
     border-color: #802124;
-    border-radius: 0px;
+    border-radius: 0;
 }
 .btn-link-m1
 {
@@ -1170,21 +1169,21 @@ margin-bottom: 17px;
   margin-top: 70px;
 }
 .listing-m3 .listing-item-block {
-  padding:0px;
+  padding:0;
   vertical-align: top;
   overflow: visible;
 }
 .listing-m3 .listing-item-block div[class*='col'],
 .listing-m3 .listing-item-block header[class*='col'] {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .listing-m3 .listing-item-block div[class*='col'] {
   vertical-align: top;
 }
 
 .listing-m3 div.listing-item-content[class*='col'] {
-  padding-left: 0px;
+  padding-left: 0;
 }
 /*--- Listing Item Block General Ends ---*/
 
@@ -1241,7 +1240,7 @@ margin-bottom: 17px;
  .lst-img-caption-btm-btns {
     position: absolute;
     bottom: 0;
-    right: 0px;
+    right: 0;
     left: 0;
     height: 47px;
     text-align: center;
@@ -1250,7 +1249,7 @@ margin-bottom: 17px;
 }
 .lst-img-caption-btm-btns h2 {
   padding: 7px;
-  margin: 0px;
+  margin: 0;
 }
 .listing-m3  .lst-itm-actions {
   bottom: 85px;
@@ -1263,7 +1262,7 @@ margin-bottom: 17px;
   transition: transform 0.5s ease-in-out;
 }
 .no-touchevents .listing-m3  .lst-img-caption-btm-btns {
-  bottom: 0px;
+  bottom: 0;
   -webkit-backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   -moz-transition: -moz-transform 0.3s ease-in-out;
@@ -1302,7 +1301,7 @@ margin-bottom: 17px;
 .listing-m3 .listing-item-category p {
   font-size: 1.2em;
   margin: 0;
-  padding-bottom:0px;
+  padding-bottom:0;
 }
 
 /*--- Listing Item Reference ---*/
@@ -1349,12 +1348,11 @@ margin-bottom: 17px;
 /*--- Listing Item Parameters Start ---*/
 .listing-m3 .listing-item-parameters ul {
   margin: 0;
-  padding: 0;
   display: inline-table;
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
-    text-align: start;
+  text-align: start;
 
 }
 .listing-m3 .listing-item-parameters ul li{
@@ -1363,12 +1361,12 @@ margin-bottom: 17px;
   padding-bottom: 4px;
   padding-left: 15px;
   vertical-align: top;
-    display: inline-block;
+  display: inline-block;
 
 
 }
 .listing-m3 .listing-item-parameters li[class*='col'] {
-  padding-right: 0px;
+  padding-right: 0;
 }
 /*--- Listing Item Parameters End ---*/
 
@@ -1449,12 +1447,12 @@ margin-bottom: 17px;
   color: #282828;
   background-color: #ebebeb;
   min-height: 382px;
-  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.6);
 }
 .prov
 {
   position: relative;
-  top: 0px;
+  top: 0;
   right: 26px;
   width: 320px;
   height: 45px;
@@ -1634,8 +1632,8 @@ right: 18px;
     .section-bg
 
     {
-        margin-right: 0px;
-        margin-left: 0px;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
 /*-------------------- Listing Model3 Media Queries End -------------*/
@@ -1748,7 +1746,7 @@ right: 18px;
     .pagination-m3 ul.pagination li a
 
     {
-        margin-left: 0px;
+        margin-left: 0;
         height: 33px;
         width: 30px;
     }
@@ -1778,7 +1776,7 @@ margin-right: 10px;
   background-color: transparent !important;
 }
 .listing-details-m1 .lst-itm-dtl-content[class*='col'] {
-  padding: 0px 0px 4px 0px;
+  padding: 0 0 4px 0;
 }
 .listing-details-m1 .lst-itm-dtl-btm-block {
   position: relative;
@@ -1790,7 +1788,7 @@ margin-right: 10px;
 .listing-details-m1 .lst-itm-dtl-params[class*='col'] {
   padding-left: 21px;
   padding-right: 9px;
-  margin-left: 0px;
+  margin-left: 0;
   padding-top: 18px;
   padding-bottom: 18px;
 }
@@ -1807,7 +1805,7 @@ margin-right: 10px;
 
 /*--- Listing Details Info Buttons Start ---*/
 .listing-details-m1 .lst-dtl-info-buttons {
-  padding-right: 0px;
+  padding-right: 0;
 }
 .listing-details-m1 .lst-dtl-info-buttons span:not(:first-child) {
   margin-left: 6px;
@@ -1816,7 +1814,7 @@ margin-right: 10px;
 
 /* Listing Details Reference */
 .listing-details-m1 .lst-itm-dtl-reference {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 /* Listing Details Actions */
@@ -1833,8 +1831,8 @@ margin-right: 10px;
 
 /*--- Listing Details Img Block Starts ---*/
 .listing-details-m1 div.lst-itm-dtl-img[class*='col'] {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
   padding-bottom: 5px;
 }
 
@@ -1930,7 +1928,7 @@ color: #882c2f;
 }
 
 .listing-details-m1 .lst-itm-dtl-desc-header-txt span {
-  padding: 5px 0px 7px 0px;
+  padding: 5px 0 7px 0;
   font-size: 1.3em;
 }
 
@@ -1976,7 +1974,7 @@ color: #882c2f;
 
 /*--- Listing Details Bottom Block Starts ---*/
 .listing-details-m1 .lst-itm-dtl-btm-block > div {
-  padding-left: 0px;
+  padding-left: 0;
 }
 .listing-details-m1 .lst-itm-dtl-btm-block > div:nth-child(2) {
   margin-top: 18px; 
@@ -1993,7 +1991,7 @@ color: #882c2f;
 }
 
 .listing-details-m1 div.lst-itm-dtl-cnt-img-container[class*='col-'] {
-  padding-left: 0px;
+  padding-left: 0;
   padding-right: 18px;
 }
 .listing-details-m1 .lst-itm-dtl-contacts-img {
@@ -2011,8 +2009,8 @@ color: #882c2f;
   font-weight: 600;
 }
 .listing-details-m1 .lst-itm-dtl-contacts-txt[class*='col-'] {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .listing-details-m1 .lst-itm-dtl-contacts-txt p:nth-child(1) {
   font-size: 1.2em;
@@ -2048,8 +2046,8 @@ color: #882c2f;
 
 /* Form Block Wrapper Starts */
 .listing-details-m1 .form-block .form-col-wrapper[class*='col-'] {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .listing-details-m1 .form-block .form-col-wrapper > div[class*='col-'] {
   padding-left: 12px;
@@ -2061,8 +2059,8 @@ color: #882c2f;
 }
 .listing-details-m1 .form-block .form-btn-container div[class*='col-'] {
   padding-left: 12px;
-  padding-right: 0px;
-  margin-right: 0px;
+  padding-right: 0;
+  margin-right: 0;
 }
 /* Form Block Wrapper Ends */
 /*--- Listing Details Contacts Form Ends ---*/
@@ -2073,7 +2071,7 @@ color: #882c2f;
 .listing-details-m1 .lst-itm-dtl-block.row-col {
   color: #282828;
   background-color: #f5f5f5;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .listing-details-m1 .lst-itm-dtl-price-clr {
@@ -2366,7 +2364,7 @@ color: #882c2f;
 {
   font-family: "Open Sans";
   color: black;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .pagecontacts span
 {
@@ -2376,7 +2374,7 @@ color: #882c2f;
 {
     width: 242px;
     height: 44px;
-    border-radius: 0px;
+    border-radius: 0;
     display: inline-block;
     padding: 6px 12px;
     margin-left: 12px;
@@ -2391,7 +2389,7 @@ color: #882c2f;
 {
     width: 242px;
     height: 217px;
-    border-radius: 0px;
+    border-radius: 0;
     display: inline-block;
     padding: 6px 12px;
     margin-left: 12px;
@@ -2407,7 +2405,7 @@ color: #882c2f;
     background-image: -moz-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
-    box-shadow: inset 0px 0px 1px 0px rgba(255, 255, 255, 0.75);
+    box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.75);
     width: 242px;
     height: 39px;
     font-size: 14px;
@@ -2516,25 +2514,24 @@ text-align: -webkit-center;
 .dpe-ges-block-m3[class*='col-'] {
     padding-left: 21px;
     padding-right: 21px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;
 }
 .dpe-ges-block-m3 div[class*='col-']:nth-child(1) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: 0;
     text-align: left;
-    padding-right: 0px;
 }
 .dpe-ges-block-m3 > div[class*='col-']:nth-child(1) {
     margin-left: -0.125em;
-    padding-left: 0px;
+    padding-left: 0;
     padding-bottom: 10px;
 }
 .dpe-ges-block-m3 div[class*='col-']:nth-child(2) {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: left;
     padding-bottom: 10px;
 }
@@ -2552,7 +2549,7 @@ text-align: -webkit-center;
 }
 .dpe-ges-block-m3 .dpe-ges-graph ul li {
     height: 22px;
-    padding-right: 0px;
+    padding-right: 0;
     margin-bottom: 1px;
     position: relative;
     display: block;
@@ -2579,7 +2576,7 @@ text-align: -webkit-center;
 .dpe-ges-block-m3 .dpe-ges-graph ul li span:nth-child(2) {
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: 0;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -2821,7 +2818,7 @@ text-align: -webkit-center;
 }
 @media (min-width: 768px) {
     .dpe-ges-block-m3[class*='col-'] {
-        padding-left: 0px;
+        padding-left: 0;
         padding-right: 18px;
         margin-left: -0.125em;
         margin-right: -0.125em;
@@ -2887,7 +2884,7 @@ text-align: -webkit-center;
 }
 
 .dpe-ges-block-m1-v1 a{
-    border-radius: 0px;
+    border-radius: 0;
     height: 35px;
     width: 30px;
     position: relative;
@@ -2902,7 +2899,7 @@ text-align: -webkit-center;
 
 .dpe-ges-block-m1-v1  .dpe-ges-graph ul li {
     height: 22px;
-    padding-right: 0px;
+    padding-right: 0;
     margin-bottom: 1px;
     position: relative;
     display: block;
@@ -2932,7 +2929,7 @@ text-align: -webkit-center;
 .dpe-ges-block-m1-v1 .dpe-ges-graph ul li span:nth-child(2) {
     position: absolute;
     top: 50%;
-    right: 0px;
+    right: 0;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -3234,8 +3231,8 @@ text-align: -webkit-center;
 /*--------------------------------------------------------------------------*/
 /*--- Form Wizard Content Starts ---*/
 .form-wizard-m1 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .form-wizard-m1 .wizard-nav {
     overflow: hidden;
@@ -3333,7 +3330,7 @@ In this case we don't need it as there are max 4 tabs */
 }
 .form-wizard-m1 .pager li>a.border-rect,
 .pager li>span.border-rect {
-    border-radius: 0px;
+    border-radius: 0;
 }
 /*--- Form Wizard Options End ---*/
 
@@ -3426,8 +3423,8 @@ In this case we don't need it as there are max 4 tabs */
     padding-right: 12px;
 }
 .form-input-group-m1 > div {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .form-input-group-m1 .form-input-addon label{
     width: 100%;
@@ -3436,8 +3433,8 @@ In this case we don't need it as there are max 4 tabs */
     color: #333;
     background-color: transparent;
     border: 1px solid transparent;
-    -moz-border-radius: 25px 0px 0px 25px;
-    -ms-border-radius: 25px 0px 0px 25px;
+    -moz-border-radius: 25px 0 0 25px;
+    -ms-border-radius: 25px 0 0 25px;
 
 }
 /*override*/
@@ -3452,7 +3449,7 @@ In this case we don't need it as there are max 4 tabs */
 .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
 
-    border-right: 0px!important;
+    border-right: 0!important;
 }
 
 .form-input-group-m1 div.form-input-col2 .form-control,
@@ -3485,7 +3482,7 @@ In this case we don't need it as there are max 4 tabs */
 }
 .form-border-rounded>input
 {
-    border-radius: 0px;
+    border-radius: 0;
 }
 /*--------------------  Form Input Group Model1 Content Ends ----------*/
 
@@ -3507,7 +3504,7 @@ In this case we don't need it as there are max 4 tabs */
     .form-input-group-m1 div.form-input-col1 .select2-selection--single,
     .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
     .form-input-group-m1 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-        border-radius: 0px;
+        border-radius: 0;
         border-left: 1px solid #c8c8c8!important;
     }
     .form-input-group-m1 div.form-input-col3 .form-control,
@@ -3515,7 +3512,7 @@ In this case we don't need it as there are max 4 tabs */
     .form-input-group-m1 div.form-input-col3 .select2-selection--single,
     .form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
     .form-input-group-m1 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 0 25px 25px 0;
     }
     /*override*/
     .form-input-group-m1.form-error.form-error-m1 .form-error-blck {
@@ -3537,12 +3534,12 @@ In this case we don't need it as there are max 4 tabs */
 /*-------------------------------------------------------------------------------------*/
 /*--------------------  Form Input Group Model2 Content Starts ----------*/
 .form-input-group-m2 {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .form-input-group-m2 > div {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Cols for Double Input Forms without Addons Start */
@@ -3552,9 +3549,9 @@ In this case we don't need it as there are max 4 tabs */
 .form-input-group-m2 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .form-input-group-m2 div.form-input-col1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
 .form-input-group-m2 div.form-input-col1 .input-group-addon {
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    border-right: 0px!important;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-right: 0!important;
 }
 
 .form-input-group-m2 div.form-input-col2 .form-control,
@@ -3562,8 +3559,8 @@ In this case we don't need it as there are max 4 tabs */
 .form-input-group-m2 div.form-input-col2 .select2-selection--single,
 .form-input-group-m2 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .form-input-group-m2 div.form-input-col2 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
     border-left: 1px solid #c8c8c8;
 }
 .form-input-group-m2.form-error.form-error-m1 div.form-input-col2 .form-control {
@@ -3577,13 +3574,13 @@ In this case we don't need it as there are max 4 tabs */
 .form-input-group-m2 div.form-input-col3 .select2-selection--single,
 .form-input-group-m2 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .form-input-group-m2 div.form-input-col3 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
 .form-input-group-m2 div.form-input-col3 .input-group-addon {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 .form-input-group-m2 div.form-input-col4 {
   /*  margin-left: -2px;*/
@@ -3594,9 +3591,9 @@ In this case we don't need it as there are max 4 tabs */
 .form-input-group-m2 div.form-input-col4 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
 .form-input-group-m2 div.form-input-col4 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
 .form-input-group-m2 .input-group-addon {
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    border-left: 0px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 0;
 }
 /* Cols for Double Input Forms with Addons End */
 /*--------------------  Form Input Group Model2 Content Ends ----------*/
@@ -3779,7 +3776,7 @@ the drop down is opened above and the form tooltip  is under it */
 /*---------------------------------------------------------------------------*/
 /*--------------------  Browse Model2 Content Starts ----------*/
 label.browse-m2.file {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     width: 100%;
     text-align: left;
 }
@@ -3788,8 +3785,8 @@ label.browse-m2.file {
     font-weight: normal;
     position: absolute;
     top: 0;
-    right: 0px;
-    left: 0px;
+    right: 0;
+    left: 0;
     z-index: 5;
     line-height: 1.5;
     height: 35px;
@@ -3901,7 +3898,7 @@ label.browse-m2.file {
 /*--------------------  Browse Model2 Colors End ------------*/
 
 .form-border-rounded .file-custom-right .file-custom-txt {
-    border-radius: 0px;
+    border-radius: 0;
     border: 1px solid #c8c8c8;
 }
 
@@ -3970,7 +3967,7 @@ label.browse-m2.file {
 }
 .form-control
 {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 /*page7 CSS*/
@@ -4066,7 +4063,7 @@ label.browse-m2.file {
     outline: none;
 }
 .popup-contact-m2 .modal-header .close {
-    margin: -3px 0px 0 0;
+    margin: -3px 0 0 0;
     z-index: 2;
 }
 /*--- Modal General Styles End ---*/
@@ -4126,13 +4123,13 @@ label.browse-m2.file {
 
 /*--- Popup Contact Model2 Form Starts ---*/
 .popup-contact-m2 .form-block {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 14px;
 }
 .popup-contact-m2 .form-block .form-col-wrapper[class*='col-'] {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .popup-contact-m2 .form-block .form-col-wrapper > div[class*='col-'] {
     padding-left: 12px;
@@ -4173,7 +4170,7 @@ label.browse-m2.file {
 /*modal CSS*/
 .modal-header
 {
-    padding: 0px;
+    padding: 0;
 }
 .modalimage
 {
@@ -4191,10 +4188,10 @@ label.browse-m2.file {
     transform: translate(-50%,-50%);
     width: 20%;
     background-color: #fdfdfd;
-    box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
-    -webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
-    -moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
-    -o-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 21px 3px #242424;
+    box-shadow: inset 0 0 50px 0 #ABABAB,0 0 21px 3px #242424;
+    -webkit-box-shadow: inset 0 0 50px 0 #ABABAB,0 0 21px 3px #242424;
+    -moz-box-shadow: inset 0 0 50px 0 #ABABAB,0 0 21px 3px #242424;
+    -o-box-shadow: inset 0 0 50px 0 #ABABAB,0 0 21px 3px #242424;
 }
 
 .modal-hover
@@ -4203,7 +4200,7 @@ label.browse-m2.file {
     width: 100%;
     height: 80px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
 }
 
 .modal-dialog
@@ -4230,14 +4227,14 @@ label.browse-m2.file {
 .modal-content
 {
 
-    border-radius: 0px;
+    border-radius: 0;
 
 }
 .close
 {
     position: absolute;
     top: 0;
-    right: 0px;
+    right: 0;
     font-size: 47px;
     color: #fff !important;
     opacity: 1 !important;
