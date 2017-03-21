@@ -4021,7 +4021,7 @@ label.browse-m2.file {
 
 .error
 {
-    padding: 2px 0px;
+    padding: 2px 0;
 }
 
 
@@ -4034,14 +4034,14 @@ label.browse-m2.file {
     border-bottom: none;
 }
 .popup-contact-m2 .modal-content {
-    border-radius: 0px;
+    border-radius: 0;
 }
 .popup-contact-m2 .modal-content > div[class*='col-'] {
     padding: 0;
 }
 .popup-contact-m2 .modal-content div.modal-left-content[class*='col-'] {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
 }
 .popup-contact-m2 .modal-dialog {
     margin: 60px 25px;
