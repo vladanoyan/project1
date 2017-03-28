@@ -3628,7 +3628,11 @@ In this case we don't need it as there are max 4 tabs */
 .form-error-blck {
     display: none;
 }
-.form-error.form-error-m1 .form-error-blck {
+.form-error-blck>a
+{
+  color: #761518;
+}
+ .form-error-blck {
     display: inline-block;
     z-index: 170;
     position: absolute;
@@ -3639,6 +3643,7 @@ In this case we don't need it as there are max 4 tabs */
     -webkit-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+}
 }
 /* This is for fixing form error icon positioning problem when
 the drop down is opened above and the form tooltip  is under it */
@@ -3750,18 +3755,18 @@ the drop down is opened above and the form tooltip  is under it */
 
 /*-------------------- Form Error Block Media Queries Start -------*/
 @media (min-width: 480px)  and (max-width: 600px){
-    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+     .form-error-blck.search-form-error-blck {
         right: 7%;
     }
 }
 @media (min-width: 601px)  and (max-width: 768px){
-    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+     .form-error-blck.search-form-error-blck {
         right: 8%;
     }
 }
 
 @media (min-width: 992px) {
-    .form-error.form-error-m1 .form-error-blck.search-form-error-blck {
+  .form-error-blck.search-form-error-blck {
         right: -20px;
     }
 }
@@ -4290,8 +4295,6 @@ label.browse-m2.file {
 .finish-btn>a{
     width:100% !important;
 }
-
-
 
 
 
