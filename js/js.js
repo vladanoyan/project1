@@ -207,9 +207,9 @@ $('#nav-icon3').click(function(){
         responsive:{
             0:{
                 items:1,
-                nav:true
+                nav: true
             },
-            550:{
+            520:{
                 items:2,
                 nav:true
             },
@@ -221,11 +221,11 @@ $('#nav-icon3').click(function(){
                 items:4,
                 nav:true
             }
-    }
+        }
     });
 /*chenge btn text*/
 
-        $('#equipment').click(function(){
+        $('.SeeMore2').click(function(){
         $('#equipment').toggleClass('flashOn flash')
     });
 

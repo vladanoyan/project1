@@ -1,4 +1,5 @@
 
+
 /*HEADER CSS*/
 *
 {
@@ -89,7 +90,7 @@ body
 }
 #nav-icon3 span:nth-child(1) {
   top: 0;
-  height: 4px;
+  height: 5px;
 }
 
 #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
@@ -162,7 +163,7 @@ body
   background-image: -ms-linear-gradient( 90deg, rgb(136,44,47) 0%, rgb(113,15,18) 100%);
   border-radius: 0;
   position: fixed;
-  z-index:111;
+  z-index:9999;
   width:100%;
 }
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li:hover
@@ -173,17 +174,22 @@ body
 @media screen and (max-width:1206px) {
 .navbar-inverse .navbar-nav>li>a
 
-{font-size:12px ;
+{font-size:11px ;
 }
 }
-@media screen and (max-width:1206px) {
-    .navbar-inverse .navbar-nav>li>a
+@media screen and (max-width:1026px) {
+.navbar-inverse .navbar-nav>li>a
 
-    {font-size:10px ;
-    }
+{font-size:10px ;
+}
 }
  
 @media (max-width: 992px) {
+  .navbar-inverse .navbar-nav>li>a
+
+    {
+        font-size: 13px;
+    }
     .navbar-header {
         float: none;
     }
@@ -217,6 +223,11 @@ body
     }
     .collapse.in{
         display:block !important;
+    }
+    .dropdown-menu{
+      width: 100%;
+      text-align: center;
+      background-color: transparent;
     }
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img
@@ -281,11 +292,7 @@ position: relative;
     }
 }
 @media screen and (max-width:770px) {
-    .navbar-inverse .navbar-nav>li>a
-
-    {
-        font-size: 13px;
-    }
+    
     .logo
     {
         width: 230px;
@@ -340,7 +347,7 @@ position: relative;
     .flag1
     {
         
-        top: 110px;
+        top: 100px;
     }
 }
 
@@ -483,6 +490,16 @@ z-index: 39;
   font-size: 32px;
   margin-top: 0;
 }
+@media (max-width: 470px) {
+    .Coups_de_Coeur{
+       font-size: 24px;
+    }
+}
+@media (max-width: 420px) {
+    .Coups_de_Coeur{
+       font-size: 18px;
+    }
+}
 .pics
 {
   position: relative;
@@ -533,7 +550,6 @@ clear: both;
 {
 border-radius: 3px;
 box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.35);
-width: 236px !important;
 background-color: white;
 
 }
@@ -570,13 +586,15 @@ text-align: left;
 -webkit-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
 -ms-transform: matrix( 0.92103075644223,0,0,0.92110874200426,0,0);
 position: absolute;
-top: 14px;
+top: 11px;
 left: 14px;
 }
 .table {
 font-size: 13px;
 line-height: 13px; 
-margin-top: 18px;}
+margin-top: 18px;
+text-align: left;
+}
 .table td, .table tr {
 border: none;
 text-align: -webkit-auto; }
@@ -645,8 +663,12 @@ line-height: 8px;
 
 .slider-row
 {
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 0 40px;
+}
+@media (min-width: 768px) {
+    .slider-row {
+        padding: 0 80px;
+    }
 }
 /*-------------------- Footer Model2 Content Starts -------------------*/
 /*--- Footer General Styles Start ---*/
@@ -780,6 +802,8 @@ body>footer.footer-m2 {
 }
 .footer-m2 .footer-top-links-bg {
   background-color: transparent;
+  text-align: center;
+  margin:0;
 }
 .footer-m2 .footer-contacts-partners-bg,
 .footer-m2 .footer-btm-links-bg,
@@ -923,7 +947,7 @@ margin-bottom: 17px;
 /*page1 CSS*/
 .Title_page1 {
   border:1px solid #882c2f;
-  width: 632px;
+  max-width: 632px;
   margin:0 auto;
   margin-bottom: 40px;
 
@@ -940,7 +964,7 @@ margin-bottom: 17px;
 /*HEADER SEARCH*/
 .Title_page2 {
   border:1px solid #882c2f;
-  width: 231px;
+  max-width: 231px;
   margin:0 auto;
   margin-bottom: 40px;
 
@@ -979,6 +1003,9 @@ margin-bottom: 17px;
 .form-group
 {
   margin-bottom: 0;
+}
+.form-group-textarea{
+   padding: 0 11px;
 }
 .searchbar {
   min-height: 67px;
@@ -1358,7 +1385,7 @@ margin-bottom: 17px;
 .listing-m3 .listing-item-parameters ul li{
 
   padding-top: 4px;
-  padding-bottom: 4px;
+  padding-bottom: 0;
   padding-left: 15px;
   vertical-align: top;
   display: inline-block;
@@ -1443,11 +1470,18 @@ margin-bottom: 17px;
 /*-------------------- Listing Model3 Content Ends -----------*/
 
 /*-------------------- Listing Model3 Colors Start -----------*/
-.listing-m3 .listing-item-block {
+.backgrondColor {
   color: #282828;
   background-color: #ebebeb;
   min-height: 382px;
   box-shadow: 0 0 19px rgba(0, 0, 0, 0.6);
+  padding:0;
+}
+@media (min-width: 990px) {
+  .vtop-382
+{
+  height: 382px;
+}
 }
 .prov
 {
@@ -1525,12 +1559,27 @@ font-size: 13px;
 margin-top: 10px;
 
 }
-.listing-m3 .listing-item-parameters {
+.listing-m3 .listing-item-parameters>ul {
   border-bottom: 1px solid  #b4b4b4;
   border-top: 1px solid  #b4b4b4;
   vertical-align: top;
   background-color: #cdcdcd;
   max-height: 115px;
+}
+.listing-item-parameters>ul>li
+{
+  width: 49%;
+}
+@media (max-width: 380px) {
+  .listing-item-parameters>ul>li
+{
+  display: block!important;
+}
+.listing-item-parameters > ul > li
+{
+  width: 100%;
+}
+
 }
 .listing-m3 .lst-itm-left-arrow ul li:before {
   border-left: 5px solid #822427;
@@ -1569,11 +1618,7 @@ margin-top: 10px;
 right: 18px;
 }
 }
-@media (min-width: 0px) {
-  .listing-m3 .listing-item-block {
-    float: left;
-  }
-}
+
 
 
 @media (min-width: 992px) {
@@ -1636,6 +1681,19 @@ right: 18px;
         margin-left: 0;
     }
 }
+@media screen and (max-width:360px) {
+    .section-bg
+
+    {
+        margin-right: 0;
+        margin-left: 0;
+        padding:0;
+    }
+}
+#agency>.section-bg>.col-sm-12{
+  padding:0;
+  margin:0;
+}
 /*-------------------- Listing Model3 Media Queries End -------------*/
 /********************** Listing Model3 Ends  *****************************************/
 /*-----------------------------------------------------------------------------------*/
@@ -1659,7 +1717,8 @@ right: 18px;
 }
 .locationicon img
 {
-    vertical-align: -webkit-baseline-middle;
+       padding: 3px 4px;
+
 }
 .locationicon:hover
 {
@@ -1685,7 +1744,7 @@ right: 18px;
   height: 34px;
   width: 37px;
   text-decoration: none;
-  padding: 7px 12px;
+  padding: 7px 10px;
 }
 .pagination>li:first-child,
 .pagination>li:first-child>a,
@@ -1760,7 +1819,7 @@ right: 18px;
 
 .Title_page3 {
   border:1px solid #882c2f;
-  width: 350px;
+  max-width: 350px;
   margin:0 auto;
   margin-bottom: 40px;
 
@@ -2345,7 +2404,7 @@ color: #882c2f;
 {
     background-image: url(../images/icons/page3-icon.png);
     height: 184px;
-    width: 245px;
+    max-width: 245px;
     background-repeat: no-repeat;
     border: 1px solid #bababa;
     margin: 0 auto;
@@ -2424,14 +2483,23 @@ color: #882c2f;
 }
 @media (max-width: 1199px){
     .formgroup {
-        width: 81%;
-    margin: 0 auto;
+        margin: 0 auto;
     }
     .pagecontacts
     {
       text-align: center;
     }
 
+}
+@media (max-width: 400px) {
+  
+.batserach2,
+  .form-control2-2,
+    .myform-control2
+
+  {
+    width: 192px;
+  }
 }
 /*-------------------- Library of Custom Cols Starts ----------*/
 /* Custom Col for Mobile >=480px and <768px */
@@ -2454,7 +2522,7 @@ color: #882c2f;
     width: 58.33333333%;
 }
 .col-c-xs-6 {
-    width: 50%;
+    width: 49%;
 }
 .col-c-xs-5 {
     width: 41.66666667%;
@@ -2484,7 +2552,7 @@ text-align: -webkit-center;
 }
 .param li{
     display: inline-block;
-
+    width: 49%!important;
 }
 
 @media (min-width: 768px) {
@@ -2493,6 +2561,13 @@ text-align: -webkit-center;
 
     }
 }
+@media (max-width: 470px) {
+    .param li{
+        display: block;
+        width: 100% !important;
+    }
+}
+
 
 /** ********************** DPE GES Block Model3 Starts ******************************!*/
 /*!*-------------------------------------------------------------------------------*!*/
@@ -2906,7 +2981,7 @@ text-align: -webkit-center;
 .dpe-ges-block-m1-v1 a{
     border-radius: 0;
     height: 35px;
-    width: 30px;
+    width: 35px;
     position: relative;
     display: inline-block;
     padding: 0;
@@ -3018,6 +3093,7 @@ text-align: -webkit-center;
     z-index: 520;
     /*opacity: 0;*/
     width: 190px;
+    overflow: hidden;
 }
 .dpe-ges-block-m1-v1 .hover-content.pos-obs-right {
     top: 100%;
@@ -3135,6 +3211,59 @@ text-align: -webkit-center;
 /* GES Colors End -*/
 
 /*-------------------- DPE GES Block Model1 Version1 Colors End -------------*/
+/*-------------------- DPE GES Block Model1 Version1 Colors End -------------*/
+
+
+ .dpe-block-cover.no-selected,
+ .dpe-block-cover.inprogress,
+ .ges-block-cover.no-selected,
+ .ges-block-cover.inprogress,
+ .dpe-block-cover.no-selected,
+ .dpe-block-cover.inprogress,
+ .ges-block-cover.no-selected,
+ .ges-block-cover.inprogress
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+.dpe-ges-block-m1-v1 div.no-selected {
+    background: url("../images/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.inprogress {
+    background: url("../images/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.no-selected {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m1-v1 div.inprogress {
+    background: url("../images/ges-inprogress.png") enter rgba(245,245,245, 0.5);
+}
+
+
+
+.dpe-ges-block-m3 .dpe-blck .hover-content div.no-selected {
+    background: url("../images/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .dpe-blck .hover-content div.inprogress {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .ges-blck .hover-content div.no-selected {
+    background: url("../images/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
+}
+.dpe-ges-block-m3 .ges-blck .hover-content div.inprogress {
+    background: url("../images/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
+.dpe-ges-block-m1-v2 .ges-block .dpe-block-cover div.inprogress {
+    background: url("../images/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
+.dpe-ges-block-m1-v2 .dpe-block .dpe-block-cover.inprogress {
+    background: url("../images/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
+}
+
 
 /*-------------------- DPE GES Block Model1 Version1 Media Queries Start -----*/
 @media (min-width:768px) and (max-width:991px) {
@@ -3163,7 +3292,7 @@ text-align: -webkit-center;
 
 .Title_page4 {
   border:1px solid #882c2f;
-  width: 652px;
+  max-width: 652px;
   margin:0 auto;
   margin-bottom: 40px;
 
@@ -3222,13 +3351,13 @@ text-align: -webkit-center;
 .textarea
 {
     height: 152px !important;
-    border-radius: 9px !important;
+    border-radius: 0px !important;
     resize: none;
     overflow: hidden;
 }
-.form-xlg .control-label {
-    height: 50px;
-}
+/*.form-xlg .control-label {
+  height: 50px;
+}*/
 .backbtn
 {
     border-radius: 4px;
@@ -3352,6 +3481,7 @@ In this case we don't need it as there are max 4 tabs */
 .pager li>span.border-rect {
     border-radius: 0;
 }
+
 /*--- Form Wizard Options End ---*/
 
 /*--- Form Wizard Colors Start ---*/
@@ -3735,16 +3865,16 @@ the drop down is opened above and the form tooltip  is under it */
 }
 
 
-.form-error.form-error-m1 .error-btn i {
+ .error-btn i {
     color: #cd1711;
 }
-.form-error.form-error-m1 .error-btn + .tooltip > .tooltip-inner {
+ .error-btn + .tooltip > .tooltip-inner {
     background-color: #cd1711;
     max-width: 250px;
     width: 500px;
     padding: 5px;
 }
-.form-error.form-error-m1 .error-btn + .tooltip.top .tooltip-arrow {
+ .error-btn + .tooltip.top .tooltip-arrow {
     bottom: 0;
     left: 50%;
     margin-left: -5px;
@@ -3780,7 +3910,7 @@ the drop down is opened above and the form tooltip  is under it */
 
 .Title_page5 {
   border:1px solid #882c2f;
-  width: 600px;
+  max-width: 600px;
   margin:0 auto;
   margin-bottom: 40px;
 
@@ -3932,6 +4062,16 @@ label.browse-m2.file {
     {
         width:155px !important;
     }
+    .form-col-wrapper
+    {
+      padding: 3px;
+    }
+    .form-group-textarea,
+    .first-section-spacing,
+    #contact
+    {
+      padding: 0;
+    }
 }
 
 /********************* Browse Model2 Ends ************************************/
@@ -3941,7 +4081,7 @@ label.browse-m2.file {
 
 .Title_page6 {
     border:1px solid #882c2f;
-    width: 503px;
+    max-width: 503px;
     margin:0 auto;
     margin-bottom: 40px;
 }
@@ -3960,6 +4100,12 @@ label.browse-m2.file {
     {
         width:96px !important;
     }
+    #listing-details,
+    #loan-simualtion,
+    #loan-simualtion .col-sm-6{
+      padding: 0;
+    }
+   
 }
 .title-block-m1-v1.title-block-inner-clr
 {
@@ -4000,7 +4146,7 @@ label.browse-m2.file {
 
 .Title_page7 {
     border:1px solid #882c2f;
-    width: 503px;
+    max-width: 503px;
     margin:0 auto;
     margin-bottom: 40px;
 
@@ -4015,7 +4161,7 @@ label.browse-m2.file {
 
 .Title_page8 {
     border:1px solid #882c2f;
-    width: 303px;
+    max-width: 303px;
     margin:0 auto;
     margin-bottom: 40px;
 
@@ -4031,7 +4177,7 @@ label.browse-m2.file {
 
 .Title_page9 {
     border:1px solid #882c2f;
-    width: 186px;
+    max-width: 186px;
     margin:0 auto;
     margin-bottom: 40px;
 
@@ -4067,6 +4213,10 @@ label.browse-m2.file {
 }
 .popup-contact-m2 .modal-dialog {
     margin: 60px 25px;
+}
+.modal
+{
+  z-index: 999999;
 }
 
 /* Modal Close Icon */
@@ -4227,7 +4377,22 @@ label.browse-m2.file {
     position: absolute;
     bottom: 0;
 }
+@media screen and (min-width:710px) {
+.modal-hover>ul>.col-c-xs-6
+{
+  width: 50%;
+}
+}
+@media screen and (max-width:350px) {
+    .modal-dialog
+{    width:100% !important;
 
+    }
+    .agency-m8
+    {
+      padding:0;
+    }
+}
 .modal-dialog
 {
     max-width: 900px;
