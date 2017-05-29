@@ -388,43 +388,44 @@ transform: scale(1.1,1.1) !important;
 }
 .images{
 position: relative;
-background-image: url("../images/image.png");
+background-image: url("../images/mage.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
+
 .images1{
 position: relative;
-background-image: url("../images/image1.png");
+background-image: url("../images/mage1.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
 .images2{
 position: relative;
-background-image: url("../images/image2.png");
+background-image: url("../images/mage2.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
 .images3{
 position: relative;
-background-image: url("../images/image3.png");
+background-image: url("../images/mage3.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
 .images4{
 position: relative;
-background-image: url("../images/image4.png");
+background-image: url("../images/mage4.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
 .images5{
 position: relative;
-background-image: url("../images/image5.png");
+background-image: url("../images/mage5.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
 .images6{
 position: relative;
-background-image: url("../images/image6.png");
+background-image: url("../images/mage6.png");
 background-repeat: no-repeat;
 background-size: cover;
 }
