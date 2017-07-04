@@ -165,6 +165,8 @@ body
 .dropdown-menu
 {
   padding:0 0;
+   max-height: 300px;
+  overflow-y: auto;
 }
 .navbar-inverse
 {
